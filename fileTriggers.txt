@@ -1,0 +1,44 @@
+api/notifications_lametric
+api/recents_lametric
+api/update_overlay
+# 
+sounds/armandleg.txt
+sounds/bubblegum.txt
+sounds/bullshit.txt
+sounds/cia.txt
+sounds/cookie.txt
+sounds/dontbsme.txt
+sounds/exposing.txt
+sounds/gameover.txt
+sounds/getdown.txt
+# sounds/gotone.txt
+sounds/groovy.txt
+sounds/hell.txt
+sounds/kween.txt
+sounds/krazy.txt
+sounds/random.txt
+sounds/two.txt
+sounds/ugly.txt
+# 
+emotes/emotes.txt
+greetings/greetings.txt
+quotes/quotes.txt
+vipertube_vids/vipertube_vids.txt
+vips/vips.txt
+# 
+timers/viper_quote.txt
+# timers/viper_raid.txt
+timers/viper_tube.txt
+timers/viper_welcome.txt
+# 
+# twitch_actions/alerts.txt
+twitch_actions/auto_shoutout.txt
+twitch_actions/channelpoint.txt
+twitch_actions/poweron.txt
+twitch_actions/shoutout.txt
+# twitch_actions/viper_quote.txt
+twitch_actions/viper_utils.txt
+# 
+customcmds.txt
+socials.txt
+vipertube.txt

@@ -1,0 +1,27 @@
+OnSpeak *
+# ARE THEY A VIP
+Function "var data = [data]; var lowerName = data.user.toLowerCase(); return { lowerUsername: lowerName };"
+List Contains Vips "{lowerUsername}"
+Variable Set isViperVIP {contains}
+# DID THEY JUST RAID?
+List Contains ViperRaiders "{user}"
+Variable Set isCurrentViperRaider {contains}
+# ARE THEY A SUBSCRIBER?
+Function "var data = [data]; var subscriberStatus = data.flags.subscriber ? data.flags.subscriber : false; return { isSubscriber: subscriberStatus };"
+# ARE THEY A MOD?
+Function "var data = [data]; var modStatus = data.flags.mod ? data.flags.mod : false; return { isMod: modStatus };"
+Function "return { continue: ( ('{user}' != 'dr_viper') && ('{user}' != 'VipOS_MK3') ) && !{isCurrentViperRaider} && ( {isSubscriber} || {isViperVIP} || {isMod} ) };"
+API GET https://decapi.me/twitch/game/{user}
+Play 100 nowait dv_shout_out_alert.mp3
+List Get Greetings
+Variable Set greeting {value}
+List Get Emotes
+Variable Set emote {value}
+If 1 {isMod} = true
+  Chat Send "|| YO SEXY MOD"
+Chat Send "|| HEY {greeting} {emote}"
+Chat Send "|| PPL, CHECK OUT:"
+Chat Send "|| @{user} - https://twitch.tv/{user}"
+If 1 {api_data} != ""
+  Chat Send "|| CRUSHIN' IT AT... [ - {api_data} - ]"
+SendLametricNotification "HEY {greeting} {user}"

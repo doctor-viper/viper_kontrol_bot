@@ -1,0 +1,4 @@
+# OnTimer viperraidtimer 3600 2700 
+# Chat Send "|| RAID: SHADOW LEGENDS"
+# Chat Send "|| PLAY W/ DR_VIPER"
+# Chat Send "|| https://link.plrm.zone/app/hx9gc"

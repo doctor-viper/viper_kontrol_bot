@@ -1,0 +1,45 @@
+OnSETwitchBits
+Play 100 nowait dv_follower.mp3
+
+OnSETwitchBulkGiftSub
+Play 100 nowait dv_follower.mp3
+
+OnSEDonation
+Play 100 nowait dv_follower.mp3
+
+OnSETwitchFollow
+Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; return { isHoss: (regexName.test(user) || regexNum.test(user)) };"
+If 6 {isHoss} = false
+  Play 60 nowait we_got_one.mp3
+  Chat Send "|| THANKS FOR THE FOLLOW {user}! PogChamp"
+  Variable Set viperFollower {user}
+  SendViperRecents
+  UpdateViperOverlay
+  SendLametricNotification "WE GOT ONE! {user} JUST FOLLOWED!"
+
+OnSETwitchGiftSub
+Play 100 nowait dv_follower.mp3
+
+# OnSETwitchHost
+# Play 100 nowait dv_follower.mp3
+
+OnSETwitchRaid
+List Add ViperRaiders {user}
+Play 100 nowait dv_raid.mp3
+Chat Send "|| RAID ALERT"
+Delay 1
+Chat Send "|| [ - https://twitch.tv/{user} - ]"
+API GET https://decapi.me/twitch/game/{user}
+Chat Send "|| LAST SEEN CRUSHIN' IT AT... [ - {api_data} - ]"
+
+OnSETwitchSub
+Play 100 nowait dv_follower.mp3
+If 1 {amount} = 1
+  Chat Send "|| {user} JUST SUBSCRIBED PogChamp"
+If 1 {amount} > 1
+  Chat Send "|| {user} SUBSCRIBED FOR {amount} MONTHS IN A ROW! PogChamp"
+Variable Set viperSubscriber {user}
+API GET https://decapi.me/twitch/subcount/dr_viper
+Variable Set viperSubCount {api_data}
+SendViperRecents
+UpdateViperOverlay

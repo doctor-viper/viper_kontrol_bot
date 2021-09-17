@@ -1,0 +1,9 @@
+OnCommand b 0 !poweron !po !pwr
+Play 50 nowait mw2_betty_startup.wav
+Chat Send "|| REACTOR... ONLINE"
+Delay 2
+Chat Send "|| SENSORS... ONLINE"
+Delay 1
+Chat Send "|| WEAPONS... ONLINE"
+Delay 1.5
+Chat Send "|| ALL SYSTEMS... NOMINAL"

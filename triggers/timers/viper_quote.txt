@@ -1,0 +1,6 @@
+OnTimer viperquotetimer 3600 3000 
+Random Number 0 77
+List Get Quotes {number}
+Chat Send "|| RANDOM_QUOTE( )"
+Chat Send "|| {value}"
+SendLametricNotification {value}

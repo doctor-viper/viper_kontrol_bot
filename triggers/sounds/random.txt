@@ -1,0 +1,24 @@
+OnCommand e 5 !vs !sound !vipersound !randomsound !sfx
+GetSoundList
+List Count Sounds
+Function 'return {count: {count} / 4}'
+Random Number 1 {count}
+List Index Sounds "Sound{number}"
+Param Add index 1
+List Get Sounds {index}
+Variable Set volume {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set sound {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set quote {value}
+Play {volume} nowait {sound}
+Chat Send "|| GET_RANDOM_SOUND( )"
+Chat Send "|| {quote}"
+SendLametricNotification {quote}
+
+OnAction GetSoundList
+API GET 'lists\sounds.txt'
+Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
+List Import Sounds [lines] 

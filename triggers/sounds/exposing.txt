@@ -1,0 +1,5 @@
+OnCommand e 30 !exposing !ex
+Play 100 nowait exposing.mp3
+Chat Send "|| THE COULD BE EXPOSING THEMSELVES"
+Delay 1
+Chat Send "|| AND YOU DON'T WANT US, EXPOSING OURSELVES"

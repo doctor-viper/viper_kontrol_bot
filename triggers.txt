@@ -1,0 +1,15 @@
+OnInit
+List Empty ViperRaiders
+Chat Send "|| VipOS_MK3: INITIALIZING..."
+API GET https://decapi.me/twitch/followers/dr_viper
+Variable Set viperFollower {api_data}
+API GET https://decapi.me/twitch/latest_sub/dr_viper
+Variable Set viperSubscriber {api_data}
+API GET https://decapi.me/twitch/subcount/dr_viper
+Variable Set viperSubCount {api_data}
+Variable Set viperGoal "Purple Wig"
+SendViperRecents
+UpdateViperOverlay
+
+OnCommand b 0 !powercycle !pc
+Reset

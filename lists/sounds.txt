@@ -1,0 +1,56 @@
+Sound1
+100
+happy_trails.mp3
+HAPPY TRAILS, HANS
+Sound2
+100
+im_your_huckleberry.mp3
+I'M YOUR HUCKLEBERRY
+Sound3
+100
+top_gun_negative.mp3
+NEGATIVE GHOSTRIDER, THE PATTERN IS FULL
+Sound4
+75
+good_bad_ugly_short.mp3
+WAH-WAH-WAAAAHHHHHHHH
+Sound5
+100
+chickenshit.mp3
+HOW DO I GET OUT OF THIS CHICKEN-SHIT OUTFIT?
+Sound6
+100
+davidleeroth1.mp3
+AHHHH-HA YEAH!
+Sound7
+100
+calibration.mp3
+IT MUST BE A PROBLEM IN CALIBRATION
+Sound8
+100
+deep_trouble.mp3
+ONE OF US IS IN DEEP TROUBLE
+Sound9
+100
+robocop_weapon.mp3
+PUT DOWN YOUR WEAPON. YOU HAVE 20 SECONDS TO COMPLY
+Sound10
+100
+there_is_no_bathroom.mp3
+THERE IS NO BATHROOM!
+Sound11
+100
+check_g_diffuser.mp3
+CHECK YOUR G-DIFFUSER SYSTEM!
+Sound12
+100
+do_it_do_it_now.mp3
+DO IT! DO IT NOW! C'MOOOONNNNNN!
+Sound13
+100
+badasses.mp3
+AAAAAAABSOLUTELY BADASSES, LET'S PACK 'EM IN - GET IN THERE!
+Sound14
+100
+lean_mean.mp3
+ARE YOU LEAN? ARE YOU MEAN?

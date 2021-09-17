@@ -1,0 +1,386 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"trai",
+				"Trim Trailing White Space"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp"
+	],
+	"file_history":
+	[
+		"/C/kruiz_control/triggers/twitch_actions/viper_quote.txt",
+		"/C/kruiz_control/triggers/twitch_actions/alerts.txt",
+		"/C/kruiz_control/triggers/sounds/two.txt",
+		"/C/kruiz_control/triggers/api/lametric",
+		"/C/kruiz_control/triggers/api/recent_follower",
+		"/C/kruiz_control/triggers/sounds/krazy.txt",
+		"/C/kruiz_control/triggers/sounds/random.txt",
+		"/C/kruiz_control/triggers/sounds/groovy.txt",
+		"/C/kruiz_control/triggers/sounds/ugly.txt",
+		"/C/kruiz_control/triggers/twitch_actions/channelpoint.txt",
+		"/C/kruiz_control/fileTriggers.txt",
+		"/C/kruiz_control/triggers/twitch_actions/auto_shoutout.txt",
+		"/C/kruiz_control/triggers/vips/vips.txt",
+		"/C/Users/timge/Desktop/Stream Assets/dv_colors.txt",
+		"/C/kruiz_control/triggers/quotes/quotes.txt",
+		"/C/kruiz_control/settings/tts/tag.txt",
+		"/C/kruiz_control/triggers/sounds/hell.txt",
+		"/D/wwwroot/sites/lazer/index.html",
+		"/C/kruiz_control/triggers/vipertube_vids/vipertube_vids.txt",
+		"/C/kruiz_control/triggers/greetings/greetings.txt",
+		"/C/kruiz_control/triggers/emotes/emotes.txt",
+		"/C/kruiz_control/triggers/timers/viper_quote.txt",
+		"/C/kruiz_control/triggers/timers/viper_raid.txt",
+		"/C/kruiz_control/triggers/vipertube.txt",
+		"/C/kruiz_control/triggers/timers/viper_tube.txt",
+		"/C/kruiz_control/triggers/socials.txt",
+		"/C/kruiz_control/triggers.txt",
+		"/C/kruiz_control/triggers/twitch_actions/shoutout.txt",
+		"/C/kruiz_control/triggers/timers/viper_welcome.txt",
+		"/C/kruiz_control/triggers/sounds/gameover.txt",
+		"/C/kruiz_control/triggers/sounds/gotone.txt",
+		"/C/kruiz_control/lists/sounds.txt",
+		"/C/kruiz_control/triggers/customcmds.txt",
+		"/C/kruiz_control/triggers/sounds/bullshit.txt",
+		"/C/kruiz_control/triggers/sounds/bubblegum.txt",
+		"/C/Users/timge/Desktop/SANDBOX_0_0_0_.sbs",
+		"/C/Users/timge/Desktop/Sandbox_config.sbc",
+		"/C/Users/timge/Desktop/SANDBOX_0_0_0_.sbsB5",
+		"/C/Users/timge/Desktop/Sandbox.sbc",
+		"/C/Users/timge/AppData/Local/Temp/fz3temp-2/Sandbox_config.sbc",
+		"/C/Users/timge/AppData/Local/Temp/fz3temp-2/Sandbox.sbc",
+		"/C/Users/timge/AppData/Local/Temp/c5590504-c7cd-424b-93a9-4145fc7a5dad.tmp.txt",
+		"/C/Users/timge/AppData/Local/Temp/fz3temp-2/SpaceEngineers-Dedicated.cfg",
+		"/C/Users/timge/Desktop/SpaceEng/Sandbox_config.sbc",
+		"/C/Users/timge/Desktop/SpaceEng/Sandbox.sbc",
+		"/C/Users/timge/Desktop/SpaceEng/SANDBOX_0_0_0_.sbs",
+		"/C/kruiz_control/triggers/timers/viper_timers.txt",
+		"/C/kruiz_control/triggers/sounds/kween.txt",
+		"/C/kruiz_control/triggers/sounds/armandleg.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/kruiz_control/triggers/alerts.txt",
+		"/C/kruiz_control/triggers/exposing.txt",
+		"/C/kruiz_control/triggers/shoutout.txt",
+		"/C/kruiz_control/triggers/dontbsme.txt",
+		"/C/kruiz_control/triggers/bullshit.txt",
+		"/C/kruiz_control/triggers/gotone.txt",
+		"/C/kruiz_control/triggers/krazy.txt",
+		"/C/kruiz_control/triggers/channelpoint.txt",
+		"/C/kruiz_control/triggers/two.txt",
+		"/C/kruiz_control/triggers/cookie.txt",
+		"/C/kruiz_control/triggers/getdown.txt",
+		"/C/kruiz_control/triggers/armandleg.txt",
+		"/C/kruiz_control/triggers/cia.txt",
+		"/C/kruiz_control/triggers/poweron.txt",
+		"/C/kruiz_control/triggers/bubblegum.txt",
+		"/C/kruiz_control/triggers/viper_timers.txt",
+		"/C/kruiz_control/triggers/vipertimer.txt",
+		"/C/Users/timge/AppData/Roaming/.minecraft/options.txt",
+		"/C/Users/timge/AppData/Local/Temp/Temp1_ChromaHills-128x-1.16-v2.zip/Changelog.txt",
+		"/C/Users/timge/AppData/Local/Temp/Temp1_ChromaHills-128x-1.16-v2.zip/CH legal PLEASE READ.txt",
+		"/C/kruiz_control/settings/twitch/user.txt",
+		"/C/kruiz_control/settings/streamelements/jwtToken.txt",
+		"/C/kruiz_control/settings/obs/password.txt",
+		"/C/kruiz_control/settings/chat/user.txt",
+		"/C/kruiz_control/settings/chat/oauth.txt",
+		"/C/kruiz_control/settings/chat/oauth_old_dr_viper.txt",
+		"/C/Users/timge/Desktop/MC2PATCH/VIDCARD.TXT",
+		"/C/Users/timge/AppData/Local/Temp/Temp1_Gunman_Chronicles_Steam_Version.1.zip/readme.txt",
+		"/C/Users/timge/Desktop/dv_colors.txt",
+		"/C/Users/timge/Desktop/Fanatical - Dubstep_flac (322 MB)/License.txt",
+		"/F/Epic Games/MW5Mercs/MW5Mercs/EpicMods/FbilDe6n7ht5Ykz4Aaqi-UvBSZk/mod.json",
+		"/C/Program Files (x86)/Steam/steamapps/common/Rising Storm 2/ROGame/Config/DefaultGame.ini",
+		"/C/Program Files (x86)/Steam/steamapps/common/Rising Storm 2/ROGame/Config/DefaultEngine.ini",
+		"/C/Users/timge/AppData/Local/DOSBox/dosbox-0.74-3.conf",
+		"/C/Users/timge/Desktop/index_white.html",
+		"/C/Users/timge/Desktop/index.html",
+		"/C/Users/timge/Documents/mint_auth_code.txt",
+		"/D/DOSGAMES/Raptor/readme.txt",
+		"/C/Program Files (x86)/GOG Galaxy/Games/Star Wars - Rebel Assault II/REBEL2/REBEL2.CFG",
+		"/C/Program Files (x86)/GOG Galaxy/Games/Star Wars - Rebel Assault II/dosbox_rebel2_single.conf",
+		"/C/Users/timge/Documents/My Games/Crysis/game.cfg",
+		"/C/Program Files (x86)/GOG Galaxy/Games/Star Wars - Rebel Assault II/dosbox_rebel2.conf",
+		"/C/Users/timge/Downloads/DoubleMysteryBakery.txt",
+		"/C/Users/timge/Desktop/cd_spotify.txt",
+		"/C/Users/timge/Desktop/AAAABb2RG5Fq8WmYg0KQVTrdJQCudQUWztboT49tBXv9gQM1N58CT9CaLWTXKCQW7z_HaoZ63zw_7nHM5CFUer4AQ20ygwL2apJ8FYJL049zGVGeQT8CvMKAFIWq75jkTNUB5blS497XeouMAFMiWonVXDxSrFb1rmKch3xEEbIG-yKMZg.webp",
+		"/C/Users/timge/Desktop/new/Sandbox.sbc",
+		"/C/Users/timge/Desktop/new/Sandbox_config.sbc",
+		"/C/Users/timge/Desktop/space_eng/Sandbox_config.sbc",
+		"/C/Users/timge/Downloads/HLSPlaylist (2).m3u8",
+		"/C/Users/timge/Desktop/2019-05-04 184335/Sandbox.sbc",
+		"/D/5_5_20_backup/dump/desktop stuff/timmygeorge2019_phone_numbers_synced_instagram.txt",
+		"/C/Users/timge/Desktop/space_eng/07_08_2020/GTXGaming/Sandbox_config.sbc",
+		"/C/Users/timge/Desktop/original_config.sbc.xml",
+		"/C/Users/timge/AppData/Roaming/SpaceEngineers/Saves/76561197972793647/PEACOCKTOPIAVERSE/SANDBOX_0_0_0_.sbs",
+		"/C/Users/timge/AppData/Roaming/SpaceEngineers/Saves/76561197972793647/PEACOCKTOPIAVERSE/SANDBOX_0_0_0_.sbsB3",
+		"/C/Users/timge/AppData/Roaming/SpaceEngineers/Saves/76561197972793647/PEACOCKTOPIAVERSE/Sandbox.sbc",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/group_notes.txt",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/awilliams_groups.txt",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/tg_notes_hypo.txt",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/_from_spreadsheet.txt",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/_from_code.txt",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/_17_notes.txt",
+		"/D/_xampp_backup/htdocs/timrgeorge/sitemap.xml",
+		"/C/Users/timge/Desktop/backups/EV_TO_GO/_tgeorge_backup/sitemanager.xml",
+		"/D/SSD_BACKUP/Documents/FileZilla.xml",
+		"/D/5_5_20_backup/dump/desktop stuff/lockslandingsalon/brenda_backup - [original]/public_html/sitemap.xml",
+		"/D/_xampp_backup/htdocs/lockslanding_backup/sitemap.xml",
+		"/D/wwwroot/sites/timrgeorge/sitemap.xml",
+		"/C/Users/timge/Documents/coinbase_secret.txt",
+		"/C/Users/timge/Desktop/fb_tg/ads_and_businesses/ads_interests.html",
+		"/D/SuperCollapse2/Super Collapse II (C) GameHouse .nfo",
+		"/D/xampp/FileZillaFTP/FileZilla Server.xml",
+		"/D/xampp/FileZillaFTP/FileZillaServer.xml",
+		"/D/xampp/FileZillaFTP/FileZilla Server Interface.xml",
+		"/D/_backup/Websites/new/timrgeorge/dev/sitemap.xml",
+		"/D/_backup/Websites/new/timrgeorge/html/sitemap.xml",
+		"/D/_backup/JustHost/public_html/timrgeorge/html/sitemap.xml",
+		"/D/_backup/JustHost/public_html/timrgeorge/old/sitemap.xml"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"C:\\kruiz_control,<project filters>",
+			"C:\\Users\\timge\\AppData\\Roaming\\SpaceEngineers\\Saves\\76561197972793647\\PEACOCKTOPIAVERSE"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"RecentFollowerAPI",
+			"LametricAPI",
+			"RecentFollowerAPI",
+			":",
+			"API Get",
+			"\"",
+			"LametricAPI",
+			"\"",
+			",",
+			"','",
+			"VIPERTUBE_RDM",
+			" - ]",
+			"[ - ",
+			"RANDOM_SOUND",
+			"GET_",
+			"VIPER.",
+			"doc_viper_bot",
+			"upperName",
+			"tempUser",
+			"Eval",
+			"isSubscriber",
+			"isCurrentViperRaider",
+			"isViperVIP",
+			"list contains",
+			"Greetings",
+			"isCurrentViperRaider",
+			"Greetings",
+			"Quotes",
+			"Casanova",
+			"Quotes",
+			"API GET",
+			"admmin",
+			"admin",
+			"inve",
+			"admin",
+			"invent",
+			"person",
+			"resp",
+			"mon",
+			"dr_viper",
+			";",
+			"$slogan = ",
+			"api_data",
+			"https://discord.gg/FUZJGkCb2G",
+			"fnoEnable",
+			"fnoEnable: true ",
+			"fnoEnable",
+			"fnoEnable:",
+			"OnSE",
+			"','",
+			"vipertimer",
+			"after",
+			"sub_months",
+			"_sub_months",
+			"parameters",
+			"sub_months",
+			"_sub_months",
+			": https:",
+			"','",
+			": https",
+			"','",
+			"https://bit.ly/",
+			"' '",
+			"armandleg",
+			"VIPERos/MK2: ",
+			"VIPERos/MK2:",
+			"monitor",
+			"display",
+			"monitor",
+			"mon",
+			"monhov",
+			"5",
+			"MyObjectBuilder_Identity",
+			"asteroids",
+			"781",
+			"weather",
+			"floradensity",
+			"EnableAutorespawn",
+			"maverick",
+			"martimus",
+			"IsAdmin",
+			"maverick"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lametric.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 275.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

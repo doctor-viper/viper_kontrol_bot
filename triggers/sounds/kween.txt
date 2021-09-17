@@ -1,0 +1,5 @@
+OnCommand bu kween_kadoma 0 !kween !kadoma
+Play 100 nowait dv_kween.mp3
+Chat Send "|| @kween_kadoma IN THE HOUSE!"
+Chat Send "|| MAMA DON'T LIKE TATTLETALES"
+SendLametricNotification "KWEEN_KADOMA IN THE HOUSE!"

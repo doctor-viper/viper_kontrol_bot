@@ -1,0 +1,5 @@
+OnCommand e 0 !vq !viperquote
+List Get Quotes
+Chat Send "|| GET_RANDOM_QUOTE( )"
+Chat Send "|| {value}"
+SendLametricNotification {value}

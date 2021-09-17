@@ -1,0 +1,12 @@
+OnInit
+API Method viperOverlay POST
+API Header viperOverlay "Content-Type" "application/json"
+API Url viperOverlay http://localhost/api/v1/data/update.php
+
+OnAction UpdateViperOverlay
+Variable Load viperFollower
+Variable Load viperSubscriber
+Variable Load viperSubCount
+Variable Load viperGoal
+API RawData viperOverlay "{ \"follower\": \"{viperFollower}\", \"subscriber\": \"{viperSubscriber}\", \"subCount\": \"{viperSubCount}\", \"goal\": \"{viperGoal}\" }"
+API Send viperOverlay

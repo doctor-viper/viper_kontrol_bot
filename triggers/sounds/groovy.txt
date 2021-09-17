@@ -1,0 +1,4 @@
+OnCommand b 0 !groovy
+Play 90 nowait groovy.mp3
+Chat Send "|| GROOVY."
+SendLametricNotification "GROOVY"
