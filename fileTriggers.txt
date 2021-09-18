@@ -1,7 +1,9 @@
+# API endpoints / funcs
 api/notifications_lametric
 api/recents_lametric
 api/update_overlay
-# 
+
+# Sounds
 sounds/armandleg.txt
 sounds/bubblegum.txt
 sounds/bullshit.txt
@@ -19,26 +21,30 @@ sounds/krazy.txt
 sounds/random.txt
 sounds/two.txt
 sounds/ugly.txt
-# 
+
+# Lists
 emotes/emotes.txt
 greetings/greetings.txt
 quotes/quotes.txt
 vipertube_vids/vipertube_vids.txt
 vips/vips.txt
-# 
+ 
+# Timers
 timers/viper_quote.txt
 # timers/viper_raid.txt
 timers/viper_tube.txt
 timers/viper_welcome.txt
-# 
-# twitch_actions/alerts.txt
+ 
+# Twitch Actions
+twitch_actions/alerts.txt
 twitch_actions/auto_shoutout.txt
 twitch_actions/channelpoint.txt
 twitch_actions/poweron.txt
 twitch_actions/shoutout.txt
 # twitch_actions/viper_quote.txt
 twitch_actions/viper_utils.txt
-# 
+
+# High level stuff
 customcmds.txt
 socials.txt
 vipertube.txt
