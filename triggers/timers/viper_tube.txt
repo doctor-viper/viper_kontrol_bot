@@ -1,7 +1,8 @@
 OnTimer vipertubetimer 3600 1800
 List Get ViperVids
 Function "var vtArr = '{value}'.split(': '); return { vtname: vtArr[0], vtlink: vtArr[1] };"
-Chat Send "|| VIPERTUBE"
-Chat Send "|| NOW PLAYING:"
+Random Number 3 27
+Chat Send "|| VIPERTV( )"
+Chat Send "|| Channel #{number}"
 Chat Send "|| {vtname}"
 Chat Send "|| {vtlink}"

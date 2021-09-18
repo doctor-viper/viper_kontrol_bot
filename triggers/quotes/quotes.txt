@@ -76,6 +76,7 @@ List Add Quotes "That's right, I'm Abe Froman."
 List Add Quotes "They've gone to plaid!"
 List Add Quotes "LUDICROUS SPEED! *GO!*"
 List Add Quotes "Yippie ki-yay."
+List Add Quotes "Yippie ki-yay."
 
 
 

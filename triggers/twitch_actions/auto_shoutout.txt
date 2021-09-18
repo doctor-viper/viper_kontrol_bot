@@ -18,7 +18,7 @@ Variable Set greeting {value}
 List Get Emotes
 Variable Set emote {value}
 If 1 {isMod} = true
-  Chat Send "|| YO SEXY MOD"
+  Chat Send "|| YO SEXY MOD drvipeBoombox drvipeCassette"
 Chat Send "|| HEY {greeting} {emote}"
 Chat Send "|| PPL, CHECK OUT:"
 Chat Send "|| @{user} - https://twitch.tv/{user}"
