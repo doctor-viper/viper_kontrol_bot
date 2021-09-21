@@ -3,6 +3,18 @@ API Method viperOverlay POST
 API Header viperOverlay "Content-Type" "application/json"
 API Url viperOverlay http://localhost/api/v1/data/update.php
 
+OnCommand bm 0 !smack
+ManualOverlayUpdates
+UpdateViperOverlay
+
+OnAction ManualOverlayUpdates
+API GET https://decapi.me/twitch/followers/dr_viper
+Variable Set viperFollower {api_data}
+API GET https://decapi.me/twitch/latest_sub/dr_viper
+Variable Set viperSubscriber {api_data}
+API GET https://decapi.me/twitch/subcount/dr_viper
+Variable Set viperSubCount {api_data}
+
 OnAction UpdateViperOverlay
 Variable Load viperFollower
 Variable Load viperSubscriber

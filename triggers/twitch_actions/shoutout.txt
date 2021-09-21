@@ -1,4 +1,4 @@
-OnCommand e 0 !so !sh !caster !shout
+OnCommand bms 0 !so !sh !caster !shout
 Function 'return {data: [after].trim().replace("@","")}'
 API GET https://decapi.me/twitch/game/{data}
 Play 100 nowait dv_shout_out_alert.mp3

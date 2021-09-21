@@ -3,6 +3,14 @@ Play 100 nowait dv_follower.mp3
 
 OnSETwitchBulkGiftSub
 Play 100 nowait dv_follower.mp3
+Chat Send "|| {user} IS AN ABSOLUTE LEGEND PogChamp"
+Chat Send "|| THEY JUST GIFTED {amount} SUBS drvipeBoombox drvipeCassette"
+API GET https://decapi.me/twitch/latest_sub/dr_viper
+Variable Set viperSubscriber {api_data}
+API GET https://decapi.me/twitch/subcount/dr_viper
+Variable Set viperSubCount {api_data}
+SendViperRecents
+UpdateViperOverlay
 
 OnSEDonation
 Play 100 nowait dv_follower.mp3
@@ -19,6 +27,14 @@ If 6 {isHoss} = false
 
 OnSETwitchGiftSub
 Play 100 nowait dv_follower.mp3
+Chat Send "|| {gifter} IS AN ABSOLUTE LEGEND PogChamp"
+Chat Send "|| THEY JUST GIFTED {user} A {tier} SUB drvipeBoombox drvipeCassette"
+API GET https://decapi.me/twitch/latest_sub/dr_viper
+Variable Set viperSubscriber {api_data}
+API GET https://decapi.me/twitch/subcount/dr_viper
+Variable Set viperSubCount {api_data}
+SendViperRecents
+UpdateViperOverlay
 
 # OnSETwitchHost
 # Play 100 nowait dv_follower.mp3
