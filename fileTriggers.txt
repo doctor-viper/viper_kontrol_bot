@@ -41,7 +41,7 @@ twitch_actions/auto_shoutout.txt
 twitch_actions/channelpoint.txt
 twitch_actions/poweron.txt
 twitch_actions/shoutout.txt
-# twitch_actions/viper_quote.txt
+twitch_actions/viper_quote.txt
 twitch_actions/viper_utils.txt
 
 # High level stuff
