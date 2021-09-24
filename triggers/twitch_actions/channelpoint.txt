@@ -17,7 +17,7 @@ Play 100 nowait dv_real_ugly.mp3
 Chat Send "|| {user} HAS REDEEMED {reward}"
 
 OnChannelPoint "SOUND // GROOVY"
-Play 90 nowait groovy.mp3
+Play 100 nowait groovy.mp3
 Chat Send "|| {user} HAS REDEEMED {reward}"
 SendLametricNotification "GROOVY"
 
