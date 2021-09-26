@@ -1,7 +1,7 @@
 OnInit
 API Method viperOverlay POST
 API Header viperOverlay "Content-Type" "application/json"
-API Url viperOverlay http://localhost/api/v1/data/update.php
+API Url viperOverlay http://localhost/viposmk3/_data/update/
 
 OnCommand bm 0 !smack
 ManualOverlayUpdates

@@ -1,7 +1,7 @@
 OnInit
 API Method viperRecentsAPI POST
 API Header viperRecentsAPI "Content-Type" "application/json"
-API Url viperRecentsAPI http://localhost/api/v1/viperfollows/
+API Url viperRecentsAPI http://localhost/viposmk3/lametric/follow_subs_app/update/
 
 OnAction SendViperRecents
 Variable Load viperFollower
