@@ -1,4 +1,4 @@
-OnChannelPoint "HYDRATE" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID"
+OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID"
 Play 100 nowait Accensione.mp3
 Chat Send "|| {user} HAS REDEEMED {reward}"
 
