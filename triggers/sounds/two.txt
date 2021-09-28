@@ -1,4 +1,4 @@
-OnCommand bu nogarthestopable 0 !tb !two !box !nogar
+OnCommand bu nogarthestopable 0 !tb !two !box !nogar !noger
 Play 100 nowait two_in_the_box.mp3
 Chat Send "|| @nogarthestoppable IN THE HOUSE!"
 SendLametricNotification "NOGARTHESTOPPABLE IN THE HOUSE"
