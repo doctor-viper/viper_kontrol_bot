@@ -1,6 +1,6 @@
 OnCommand bm 0 !shazbot
 Chat Send "/clear"
-Chat Send "|| EMERGENCY_ZONE( TRUE )"
+Chat Send "|| DANGER_ZONE( TRUE )"
 Chat Send "/slow 1800"
 Chat Send "/subscribers"
 Chat Send "/followers"
@@ -11,7 +11,7 @@ Chat Send "/slowoff"
 Chat Send "/emoteonlyoff"
 Chat Send "/subscribersoff"
 Chat Send "/followersoff"
-Chat Send "|| EMERGENCY_ZONE( FALSE )"
+Chat Send "|| DANGER_ZONE( FALSE )"
 
 OnCommand bm 0 !vipergoal
 Variable Set viperGoal {after}
@@ -24,9 +24,13 @@ OnSpeak *
 autoBanHoss {user}
 
 OnAction autoBanHoss
-Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; return { isHoss: (regexName.test(user) || regexNum.test(user)) };"
-If 4 {isHoss} = true
-  Play 100 nowait yippee_ki_yay.mp3
+Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
+If 3 {isHoss} = true
+  Play 100 wait yippee_ki_yay.mp3
   Chat Send "/ban {in1}"
   SendLametricNotification "LATER, HOSS!"
-  Chat Send "|| LATER, HOSS o/"
+
+# OnAction isOlderThanTwoHours
+# https://decapi.me/twitch/creation/
+# API GET https://decapi.me/twitch/creation/{in1}?format=MdY&tz=America/New_York
+# Variable Set viperSubCount {api_data}

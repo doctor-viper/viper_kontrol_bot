@@ -16,7 +16,7 @@ OnSEDonation
 Play 100 nowait dv_follower.mp3
 
 OnSETwitchFollow
-Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; return { isHoss: (regexName.test(user) || regexNum.test(user)) };"
+Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
 If 6 {isHoss} = false
   Play 60 nowait we_got_one.mp3
   Chat Send "|| THANKS FOR THE FOLLOW {user}! PogChamp"
@@ -36,11 +36,15 @@ Variable Set viperSubCount {api_data}
 SendViperRecents
 UpdateViperOverlay
 
-# OnSETwitchHost
-# Play 100 nowait dv_follower.mp3
+OnSETwitchHost
+Variable Load currentViperRaider
+If 2 {currentViperRaider} != {user}
+  Play 100 nowait dv_follower.mp3
+  Chat Send "|| THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
 
 OnSETwitchRaid
 List Add ViperRaiders {user}
+Variable Set currentViperRaider {user}
 Play 100 nowait dv_raid.mp3
 Chat Send "|| VIPER_RAID_ALERT( )"
 Delay 1
