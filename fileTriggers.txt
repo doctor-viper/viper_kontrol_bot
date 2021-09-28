@@ -28,6 +28,9 @@ greetings/greetings.txt
 quotes/quotes.txt
 vipertube_vids/vipertube_vids.txt
 vips/vips.txt
+
+# VipOS stuff
+vipos/vipos.txt
  
 # Timers
 timers/viper_quote.txt

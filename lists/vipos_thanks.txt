@@ -1,0 +1,12 @@
+VipOSThanks1
+100
+vipos/thanks/affirmative.mp3
+AFFIRMATIVE
+VipOSThanks2
+100
+vipos/thanks/dont_mention_it.mp3
+DON'T MENTION IT
+VipOSThanks3
+100
+vipos/thanks/of_course.mp3
+OF COURSE.

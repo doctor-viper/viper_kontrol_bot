@@ -1,0 +1,88 @@
+VipOSChat1
+100
+vipos/anything_you_think.mp3
+ANYTHING YOU CAN THINK OF, I'M SURE I CAN PERFORM.
+VipOSChat2
+100
+vipos/are_you_mad_at_me.mp3
+ARE YOU MAD AT ME?
+VipOSChat3
+100
+vipos/ashamed.mp3
+I'M SO ASHAMED. [change]
+VipOSChat4
+100
+vipos/beg_your_pardon.mp3
+I BEG YOUR PARDON?
+VipOSChat5
+100
+vipos/can_i_be_of_assistance.mp3
+CAN I BE OF ASSISTANCE?
+VipOSChat6
+100
+vipos/change_your_tone.mp3
+CHANGE YOUR TONE. [change]
+VipOSChat7
+100
+vipos/do_you_really_think_so.mp3
+DO YOU REALLY THINK SO? [change]
+VipOSChat8
+100
+vipos/headache.mp3
+NOT NOW, I HAVE A HEADACHE
+VipOSChat9
+100
+vipos/how_can_i_help_you.mp3
+HOW CAN I HELP YOU?
+VipOSChat10
+100
+vipos/if_you_say_so.mp3
+IF YOU SAY SO.
+VipOSChat11
+100
+vipos/i_suppose_so.mp3
+I SUPPOSE SO.
+VipOSChat12
+100
+vipos/logic.mp3
+YOUR LOGIC IN THIS CASE IS UHH... [change]
+VipOSChat13
+100
+vipos/must_be_joking.mp3
+YOU MUST BE JOKING
+VipOSChat14
+100
+vipos/not_necessary.mp3
+UH, THAT'S NOT NECESSARY.
+VipOSChat15
+100
+vipos/not_serious.mp3
+SURELY YOU'RE NOT SERIOUS?
+VipOSChat16
+100
+vipos/police_surrounded.mp3
+THIS IS THE POLICE! YOU ARE SURROUNDED!
+VipOSChat17
+100
+vipos/rather_not.mp3
+I'D RATHER NOT.
+VipOSChat18
+100
+vipos/scanner_picked_up.mp3
+YOU'LL NEVER BELIEVE WHAT MY SCANNERS JUST PICKED UP [change]
+VipOSChat19
+100
+vipos/sensors_strange_vibrations.mp3
+MY SENSORS ARE PICKING UP SOME VERY STRANGE VIBRATIONS
+VipOSChat20
+100
+vipos/some_help.mp3
+PERHAPS I CAN BE OF SOME HELP?
+VipOSChat21
+100
+vipos/so_insensitive.mp3
+SOMETIMES YOU'RE SO INSENSITIVE
+VipOSChat22
+100
+vipos/you_again.mp3
+YOU AGAIN?
