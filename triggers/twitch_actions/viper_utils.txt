@@ -24,7 +24,7 @@ OnSpeak *
 autoBanHoss {user}
 
 OnAction autoBanHoss
-Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /00312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
+Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
 If 3 {isHoss} = true
   Play 100 wait yippee_ki_yay.mp3
   Chat Send "/ban {in1}"
