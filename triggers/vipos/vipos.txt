@@ -1,11 +1,10 @@
 OnEveryChatMessage
-If 1 {user} != "VipOS_MK3"
- Function "var message = '{message}'; var regex = /vipos/gmi; return { hasVipos: regex.test(message) };"
+  Function "var message = [message]; var regex = /vipos|vip os|viper os|viperos/ig; return { hasVipos: ( message.match(regex) != null && [user] != 'VipOS_MK3' ) };"
 If 1 {hasVipos} = true
   VipOSSpeak {message}
 
 OnAction VipOSSpeak
-Function "var message = '{in1}'; var regex = /thank you/gmi; return { hasThanks: regex.test(message) };"
+Function "var message = [in1]; var regex = /thank you|ty ty|ty|thanks/gmi; return { hasThanks: ( message.match(regex) != null ) };"
 If 1 {hasThanks} = true
   VipOSThanks
 If 1 {hasThanks} = false

@@ -10,3 +10,15 @@ VipOSThanks3
 100
 vipos/thanks/of_course.mp3
 OF COURSE.
+VipOSThanks4
+100
+vipos/thanks/of_course.mp3
+OF COURSE.
+VipOSThanks5
+100
+vipos/thanks/Certainly.mp3
+CERTAINLY
+VipOSThanks6
+100
+vipos/thanks/business.mp3
+JUST REMEMBER, THIS IS BUSINESS - NOT PLEASURE.

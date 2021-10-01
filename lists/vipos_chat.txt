@@ -9,7 +9,7 @@ ARE YOU MAD AT ME?
 VipOSChat3
 100
 vipos/ashamed.mp3
-I'M SO ASHAMED. [change]
+YOU OUGHTA BE ASHAMED OF YOURSELF
 VipOSChat4
 100
 vipos/beg_your_pardon.mp3
@@ -21,11 +21,11 @@ CAN I BE OF ASSISTANCE?
 VipOSChat6
 100
 vipos/change_your_tone.mp3
-CHANGE YOUR TONE. [change]
+YOU HAVE TO LEARN TO CHANGE YOUR TONE. I DON'T LIKE BEING ORDERED ABOUT!
 VipOSChat7
 100
 vipos/do_you_really_think_so.mp3
-DO YOU REALLY THINK SO? [change]
+DO YOU REALLY THINK SO?
 VipOSChat8
 100
 vipos/headache.mp3
@@ -45,7 +45,7 @@ I SUPPOSE SO.
 VipOSChat12
 100
 vipos/logic.mp3
-YOUR LOGIC IN THIS CASE IS UHH... [change]
+YOUR LOGIC IN THIS CASE IS TOTALLY ILLOGICAL, AND YET, IT'S ABSOLUTELY CORRECT. THIS IS JUST... AMAZING
 VipOSChat13
 100
 vipos/must_be_joking.mp3
@@ -69,7 +69,7 @@ I'D RATHER NOT.
 VipOSChat18
 100
 vipos/scanner_picked_up.mp3
-YOU'LL NEVER BELIEVE WHAT MY SCANNERS JUST PICKED UP [change]
+YOU WON'T BELIEVE WHAT MY SCANNER JUST PICKED UP
 VipOSChat19
 100
 vipos/sensors_strange_vibrations.mp3
@@ -86,3 +86,15 @@ VipOSChat22
 100
 vipos/you_again.mp3
 YOU AGAIN?
+VipOSChat23
+100
+vipos/pants.mp3
+WHERE ARE YOUR PANTS?
+VipOSChat24
+100
+vipos/way_it_works.mp3
+OH, IS THAT THE WAY IT WORKS?
+VipOSChat25
+100
+vipos/way_it_works.mp3
+I CAN, YES - BUT WHY WOULD I WANT TO?
