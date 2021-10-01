@@ -31,5 +31,5 @@ Chat Send "|| Steam - https://bit.ly/dr_viper_steam"
 OnCommand e 0 !lurk
 Play 100 nowait dv_lurk_message.mp3
 Chat Send "|| LURK_MODE( );"
-Chat Send "|| AUTO-PILOT ENABLED"
+Chat Send "|| AUTO-PILOT: ENGAGED"
 Chat Send "|| [ - @{user} - ]"
