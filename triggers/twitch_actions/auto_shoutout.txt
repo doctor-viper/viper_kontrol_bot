@@ -18,10 +18,10 @@ Variable Set greeting {value}
 List Get Emotes
 Variable Set emote {value}
 If 1 {isMod} = true
-  Chat Send "|| YO SEXY MOD drvipeBoombox drvipeCassette"
-Chat Send "|| HEY {greeting} {emote}"
-Chat Send "|| PPL, CHECK OUT:"
-Chat Send "|| @{user} - https://twitch.tv/{user}"
+  Chat Send "\> YO SEXY MOD drvipeBoombox drvipeCassette"
+Chat Send "\> HEY {greeting} {emote}"
+Chat Send "\> PPL, CHECK OUT:"
+Chat Send "\> @{user} - https://twitch.tv/{user}"
 If 1 {api_data} != ""
-  Chat Send "|| CRUSHIN' IT AT... [ - {api_data} - ]"
+  Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"
 SendLametricNotification "HEY {greeting} {user}"

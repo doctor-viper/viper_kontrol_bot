@@ -1,6 +1,6 @@
 OnCommand bm 0 !shazbot
 Chat Send "/clear"
-Chat Send "|| DANGER_ZONE( TRUE )"
+Chat Send "\> DANGER_ZONE( TRUE )"
 Chat Send "/slow 1800"
 Chat Send "/subscribers"
 Chat Send "/followers"
@@ -11,11 +11,15 @@ Chat Send "/slowoff"
 Chat Send "/emoteonlyoff"
 Chat Send "/subscribersoff"
 Chat Send "/followersoff"
-Chat Send "|| DANGER_ZONE( FALSE )"
+Chat Send "\> DANGER_ZONE( FALSE )"
 
 OnCommand bm 0 !vipergoal
 Variable Set viperGoal {after}
 UpdateViperOverlay
+
+OnCommand bu xx_icequeen_xx 0 !doctor
+Chat Send "/me @dr_viper SOMEBODY GET ME A DOCTOR"
+Play 100 wait doctor.mp3
 
 OnSETwitchFollow
 autoBanHoss {user}

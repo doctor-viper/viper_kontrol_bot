@@ -1,5 +1,5 @@
 OnCommand e 30 !cia
 Play 75 nowait cia_arnie.mp3
-Chat Send "|| WHAT'S THE MATTER?"
+Chat Send "\> WHAT'S THE MATTER?"
 Delay 1.75
-Chat Send "|| THE CIA GOT YOU PUSHING TOO MANY PENCILS?"
+Chat Send "\> THE CIA GOT YOU PUSHING TOO MANY PENCILS?"

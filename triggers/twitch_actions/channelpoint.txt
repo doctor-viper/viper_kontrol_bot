@@ -1,27 +1,33 @@
 OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID"
 Play 100 nowait Accensione.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
+Chat Send "\> {user} HAS REDEEMED {reward}"
 
 OnChannelPoint "VIPER // VISION"
 Play 100 nowait put_on_the_glasses.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
-Chat Send "|| I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
-Chat Send "|| OR START EATING THAT TRASH CAN. PUT ON THE GLASSES!"
+Chat Send "\> {user} HAS REDEEMED {reward}"
+Chat Send "\> I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
+Chat Send "\> OR START EATING THAT TRASH CAN. PUT ON THE GLASSES!"
 
 OnChannelPoint "VIPER // CAM // SHOUTOUT"
 Play 100 nowait you_crazy_mother.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
+Chat Send "\> {user} HAS REDEEMED {reward}"
 
 OnChannelPoint "SOUND // UGLY"
 Play 100 nowait dv_real_ugly.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
+Chat Send "\> {user} HAS REDEEMED {reward}"
+SendLametricNotification "YOU? YOU'RE OKAY. THIS ONE? REAL FUCKIN' UGLY"
 
 OnChannelPoint "SOUND // GROOVY"
 Play 100 nowait groovy.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
+Chat Send "\> {user} HAS REDEEMED {reward}"
 SendLametricNotification "GROOVY"
 
-SOUND // PREDATOR VISION
 OnChannelPoint "SOUND // PREDATOR VISION"
 Play 90 nowait predator_vision.mp3
-Chat Send "|| {user} HAS REDEEMED {reward}"
+Chat Send "\> {user} HAS REDEEMED {reward}"
+SendLametricNotification "SOUND // PREDATOR VISION"
+
+OnChannelPoint "VIPER // SHOTS"
+Play 90 nowait shot.mp3
+Chat Send "\> {user} HAS REDEEMED {reward}"
+SendLametricNotification "VIPER // SHOTS"

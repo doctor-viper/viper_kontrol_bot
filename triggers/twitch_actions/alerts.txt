@@ -3,9 +3,9 @@ Play 100 nowait dv_follower.mp3
 
 OnSETwitchBulkGiftSub
 Play 100 nowait dv_follower.mp3
-Chat Send "|| {user} IS AN ABSOLUTE LEGEND PogChamp"
-Chat Send "|| THEY JUST GIFTED {amount} SUBS drvipeBoombox drvipeCassette"
-API GET https://decapi.me/twitch/latest_sub/dr_viper
+Chat Send "\> {user} IS AN ABSOLUTE LEGEND PogChamp"
+Chat Send "\> THEY JUST GIFTED {amount} SUBS drvipeBoombox drvipeCassette"
+API GET https://decapi.me/twitch/latest_sub/dr_viper?token=shc61epa3f4zisy2k4ukykaqocxd6w
 Variable Set viperSubscriber {api_data}
 API GET https://decapi.me/twitch/subcount/dr_viper
 Variable Set viperSubCount {api_data}
@@ -19,7 +19,7 @@ OnSETwitchFollow
 Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
 If 6 {isHoss} = false
   Play 60 nowait we_got_one.mp3
-  Chat Send "|| THANKS FOR THE FOLLOW {user}! PogChamp"
+  Chat Send "\> THANKS FOR THE FOLLOW {user}! PogChamp"
   Variable Set viperFollower {user}
   SendViperRecents
   UpdateViperOverlay
@@ -27,9 +27,9 @@ If 6 {isHoss} = false
 
 OnSETwitchGiftSub
 Play 100 nowait dv_follower.mp3
-Chat Send "|| {gifter} IS AN ABSOLUTE LEGEND PogChamp"
-Chat Send "|| THEY JUST GIFTED {user} A {tier} SUB drvipeBoombox drvipeCassette"
-API GET https://decapi.me/twitch/latest_sub/dr_viper
+Chat Send "\> {gifter} IS AN ABSOLUTE LEGEND PogChamp"
+Chat Send "\> THEY JUST GIFTED {user} A {tier} SUB drvipeBoombox drvipeCassette"
+API GET https://decapi.me/twitch/latest_sub/dr_viper?token=shc61epa3f4zisy2k4ukykaqocxd6w
 Variable Set viperSubscriber {api_data}
 API GET https://decapi.me/twitch/subcount/dr_viper
 Variable Set viperSubCount {api_data}
@@ -40,25 +40,25 @@ OnSETwitchHost
 Variable Load currentViperRaider
 If 2 {currentViperRaider} != {user}
   Play 100 nowait dv_follower.mp3
-  Chat Send "|| THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
+  Chat Send "\> THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
 
 OnSETwitchRaid
 List Add ViperRaiders {user}
 Variable Set currentViperRaider {user}
 Play 100 nowait dv_raid.mp3
-Chat Send "|| VIPER_RAID_ALERT( )"
+Chat Send "\> VIPER_RAID_ALERT( )"
 Delay 1
-Chat Send "|| https://twitch.tv/{user}"
+Chat Send "\> https://twitch.tv/{user}"
 API GET https://decapi.me/twitch/game/{user}
-Chat Send "|| CRUSHIN' IT AT..."
-Chat Send "|| [ - {api_data} - ]"
+Chat Send "\> CRUSHIN' IT AT..."
+Chat Send "\> [ - {api_data} - ]"
 
 OnSETwitchSub
 Play 100 nowait dv_follower.mp3
 If 1 {amount} = 1
-  Chat Send "|| {user} JUST SUBSCRIBED PogChamp"
+  Chat Send "\> {user} JUST SUBSCRIBED PogChamp"
 If 1 {amount} > 1
-  Chat Send "|| {user} SUBSCRIBED FOR {amount} MONTHS IN A ROW! PogChamp"
+  Chat Send "\> {user} SUBSCRIBED FOR {amount} MONTHS IN A ROW! PogChamp"
 Variable Set viperSubscriber {user}
 API GET https://decapi.me/twitch/subcount/dr_viper
 Variable Set viperSubCount {api_data}

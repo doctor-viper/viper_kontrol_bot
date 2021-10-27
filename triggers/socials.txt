@@ -1,35 +1,35 @@
 OnCommand e 0 !fc !friendcode
 Play 100 nowait kitt_scanner.mp3
-Chat Send "|| FRIEND_CODE( );"
-Chat Send "|| 4011-2671-4737"
+Chat Send "\> FRIEND_CODE( );"
+Chat Send "\> 4011-2671-4737"
 
 OnCommand e 0 !steam
 Play 100 nowait kitt_scanner.mp3
-Chat Send "|| STEAM_CODE( );"
-Chat Send "|| 1213238409"
-Chat Send "|| https://bit.ly/dr_viper_steam"
+Chat Send "\> STEAM_CODE( );"
+Chat Send "\> 1213238409"
+Chat Send "\> https://bit.ly/dr_viper_steam"
 
 OnCommand e 0 !space
 Play 100 nowait kitt_scanner.mp3
-Chat Send "|| SPACE_ENGINEERS( );"
-Chat Send "|| 66.235.169.65:29016"
+Chat Send "\> SPACE_ENGINEERS( );"
+Chat Send "\> 66.235.169.65:29016"
 
 OnCommand e 0 !discord
 Play 100 nowait kitt_scanner.mp3
-Chat Send "|| DISCORD_LINK( );"
-Chat Send "|| https://discord.gg/FUZJGkCb2G"
+Chat Send "\> DISCORD_LINK( );"
+Chat Send "\> https://discord.gg/FUZJGkCb2G"
 
 OnCommand e 0 !social !socials
 Play 100 nowait kitt_scanner.mp3
-Chat Send "|| SOCIAL_LINKS( );"
-Chat Send "|| Discord - https://discord.gg/FUZJGkCb2G"
-Chat Send "|| Twitter - https://twitter.com/d0ct0r_viper"
-Chat Send "|| Instagram - https://www.instagram.com/dr_v1p3r/"
-Chat Send "|| YouTube - https://bit.ly/dr_viper_youtube"
-Chat Send "|| Steam - https://bit.ly/dr_viper_steam"
+Chat Send "\> SOCIAL_LINKS( );"
+Chat Send "\> Discord - https://discord.gg/FUZJGkCb2G"
+Chat Send "\> Twitter - https://twitter.com/d0ct0r_viper"
+Chat Send "\> Instagram - https://www.instagram.com/dr_v1p3r/"
+Chat Send "\> YouTube - https://bit.ly/dr_viper_youtube"
+Chat Send "\> Steam - https://bit.ly/dr_viper_steam"
 
 OnCommand e 0 !lurk
 Play 100 nowait dv_lurk_message.mp3
-Chat Send "|| LURK_MODE( );"
-Chat Send "|| AUTO-PILOT: ENGAGED"
-Chat Send "|| [ - @{user} - ]"
+Chat Send "\> LURK_MODE( );"
+Chat Send "\> AUTO-PILOT: ENGAGED"
+Chat Send "\> [ - @{user} - ]"

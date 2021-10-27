@@ -1,5 +1,5 @@
 OnCommand e 30 !bs !dbsm
 Play 100 nowait cmon_dont_bs_me.mp3
-Chat Send "|| C'MON"
+Chat Send "\> C'MON"
 Delay 1
-Chat Send "|| DON'T BULLSHIT ME"
+Chat Send "\> DON'T BULLSHIT ME"

@@ -1,6 +1,6 @@
 OnCommand b 0 !ugly
 Play 100 nowait dv_real_ugly.mp3
 SendLametricNotification "YOU? YOU'RE OKAY. THIS ONE? REAL FUCKIN' UGLY"
-Chat Send "|| YOU? YOU'RE OKAY"
+Chat Send "\> YOU? YOU'RE OKAY"
 Delay 1.25
-Chat Send "|| THIS ONE? REAL FUCKIN' UGLY"
+Chat Send "\> THIS ONE? REAL FUCKIN' UGLY"

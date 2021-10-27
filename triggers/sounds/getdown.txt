@@ -1,7 +1,7 @@
 OnCommand e 30 !getdown !gd
 Play 100 nowait arnold_get_down_short.wav
-Chat Send "|| get down!"
+Chat Send "\> get down!"
 Delay 1
-Chat Send "|| get DOWN!"
+Chat Send "\> get DOWN!"
 Delay 1
-Chat Send "|| GET DOWN!"
+Chat Send "\> GET DOWN!"

@@ -1,11 +1,11 @@
 OnCommand b 0 !hell
 Play 75 nowait express_elevator.mp3
-Chat Send "|| GET READY, MAN"
+Chat Send "\> GET READY, MAN"
 Delay 3
-Chat Send "|| READY TO GET. IT. ONNNN."
+Chat Send "\> READY TO GET. IT. ONNNN."
 Delay 3
-Chat Send "|| READY TO GET IT ON, YOU KNOW IT!"
+Chat Send "\> READY TO GET IT ON, YOU KNOW IT!"
 Delay 4
-Chat Send "|| YOU'RE ON AN EXPRESS ELEVATOR TO HELL"
+Chat Send "\> YOU'RE ON AN EXPRESS ELEVATOR TO HELL"
 Delay 2
-Chat Send "|| GO-ING DOWN!"
+Chat Send "\> GO-ING DOWN!"

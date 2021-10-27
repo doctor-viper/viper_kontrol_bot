@@ -96,5 +96,9 @@ vipos/way_it_works.mp3
 OH, IS THAT THE WAY IT WORKS?
 VipOSChat25
 100
-vipos/way_it_works.mp3
+vipos/can_yes.mp3
 I CAN, YES - BUT WHY WOULD I WANT TO?
+VipOSChat26
+100
+vipos/arm_and_leg.mp3
+ARE YOU FAMILIAR WITH THE SAYING... THAT WILL COST YOU AN ARM AND A LEG?

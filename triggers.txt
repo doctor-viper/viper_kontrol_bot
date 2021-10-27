@@ -1,6 +1,6 @@
 OnInit
 List Empty ViperRaiders
-Chat Send "|| VipOS_MK3: INITIALIZING..."
+Chat Send "\> VipOS_MK3: INITIALIZING..."
 Variable Set viperGoal "Purple Wig"
 ManualOverlayUpdates
 SendViperRecents

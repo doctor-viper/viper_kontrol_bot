@@ -2,7 +2,7 @@ OnCommand bms 0 !so !sh !caster !shout
 Function 'return {data: [after].trim().replace("@","")}'
 API GET https://decapi.me/twitch/game/{data}
 Play 100 nowait dv_shout_out_alert.mp3
-Chat Send "|| SHOUTOUT ALERT!"
-Chat Send "|| {after} - https://twitch.tv/{data}"
+Chat Send "\> SHOUTOUT ALERT!"
+Chat Send "\> {after} - https://twitch.tv/{data}"
 If 1 {api_data} != ""
-  Chat Send "|| CRUSHIN' IT AT... [ - {api_data} - ]"
+  Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"

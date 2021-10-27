@@ -14,8 +14,8 @@ Param Add index 1
 List Get Sounds {index}
 Variable Set quote {value}
 Play {volume} nowait {sound}
-Chat Send "|| GET_RANDOM_SOUND( )"
-Chat Send "|| {quote}"
+Chat Send "\> GET_RANDOM_SOUND( )"
+Chat Send "\> {quote}"
 SendLametricNotification {quote}
 
 OnAction GetSoundList
