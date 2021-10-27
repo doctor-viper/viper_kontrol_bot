@@ -15,7 +15,7 @@ API GET 'lists\vipos_thanks.txt'
 Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
 List Import VipOSThanksSounds [lines]
 List Count VipOSThanksSounds
-Function 'return {count: {count} / 4}'
+Function 'return {count: ({count} / 4)}'
 Random Number 1 {count}
 List Index VipOSThanksSounds "VipOSThanks{number}"
 Param Add index 1
@@ -28,7 +28,7 @@ Param Add index 1
 List Get VipOSThanksSounds {index}
 Variable Set quote {value}
 Play {volume} nowait {sound}
-Chat Send "|| VIPOS_REPLY( )"
+Chat Send "\> VIPOS_REPLY( )"
 Chat Send "/me {quote}"
 SendLametricNotification {quote}
   
@@ -37,7 +37,7 @@ API GET 'lists\vipos_chat.txt'
 Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
 List Import VipOSChatSounds [lines]
 List Count VipOSChatSounds
-Function 'return {count: {count} / 4}'
+Function 'return {count: ({count} / 4)}'
 Random Number 1 {count}
 List Index VipOSChatSounds "VipOSChat{number}"
 Param Add index 1
@@ -50,6 +50,6 @@ Param Add index 1
 List Get VipOSChatSounds {index}
 Variable Set quote {value}
 Play {volume} nowait {sound}
-Chat Send "|| VIPOS_REPLY( )"
+Chat Send "\> VIPOS_REPLY( )"
 Chat Send "/me {quote}"
 SendLametricNotification {quote}

@@ -4,7 +4,8 @@ api/recents_lametric
 api/update_overlay
 
 # Sounds
-sounds/armandleg.txt
+# sounds/armandleg.txt
+sounds/babycomeback.txt
 sounds/bubblegum.txt
 sounds/bullshit.txt
 sounds/cia.txt

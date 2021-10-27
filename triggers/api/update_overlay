@@ -10,15 +10,15 @@ UpdateViperOverlay
 OnAction ManualOverlayUpdates
 API GET https://decapi.me/twitch/followers/dr_viper
 Variable Set viperFollower {api_data}
-API GET https://decapi.me/twitch/latest_sub/dr_viper
+API GET https://decapi.me/twitch/latest_sub/dr_viper?token=shc61epa3f4zisy2k4ukykaqocxd6w
 Variable Set viperSubscriber {api_data}
 API GET https://decapi.me/twitch/subcount/dr_viper
 Variable Set viperSubCount {api_data}
 
 OnAction UpdateViperOverlay
-Variable Load viperFollower
-Variable Load viperSubscriber
-Variable Load viperSubCount
-Variable Load viperGoal
-API RawData viperOverlay "{ \"follower\": \"{viperFollower}\", \"subscriber\": \"{viperSubscriber}\", \"subCount\": \"{viperSubCount}\", \"goal\": \"{viperGoal}\" }"
+# Variable Load viperFollower
+# Variable Load viperSubscriber
+# Variable Load viperSubCount
+# Variable Load viperGoal
+# API RawData viperOverlay "{ \"follower\": \"{viperFollower}\", \"subscriber\": \"{viperSubscriber}\", \"subCount\": \"{viperSubCount}\", \"goal\": \"{viperGoal}\" }"
 API Send viperOverlay
