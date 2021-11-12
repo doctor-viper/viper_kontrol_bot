@@ -1,15 +1,7 @@
 OnInit
 List Empty ViperRaiders
-Chat Send "\> VipOS_MK3: INITIALIZING..."
-Delay 2
-Chat Send "\> ."
-Delay 1
-Chat Send "\> . ."
-Delay 1
-Chat Send "\> . . ."
-Delay 1
-Chat Send "\> . . . . ONLINE"
-Delay 1
+Chat Send "\> VipOS_MK3: INITIALIZING ..."
+Delay 0.5
 Play 40 nowait welcome_back.mp3
 Chat Send "\> WELCOME BACK, CMMDR"
 Variable Set viperGoal "Purple Wig"
