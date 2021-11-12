@@ -10,7 +10,8 @@ Chat Send "\> . . ."
 Delay 1
 Chat Send "\> . . . . ONLINE"
 Delay 1
-Chat Send "\> WELCOME BACK, CMMDR VIPER"
+Play 40 nowait welcome_back.mp3
+Chat Send "\> WELCOME BACK, CMMDR"
 Variable Set viperGoal "Purple Wig"
 UpdateViperOverlay
 
