@@ -1,0 +1,10 @@
+OnInit
+API Method predatorVision POST
+API Url predatorVision http://localhost/viposmk3/overlay/predator/on/
+
+OnCommand b 0 !predator
+TurnOnPredatorVision
+
+OnAction TurnOnPredatorVision
+Play 90 nowait predator_vision.mp3
+API Send predatorVision

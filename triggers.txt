@@ -1,9 +1,17 @@
 OnInit
 List Empty ViperRaiders
 Chat Send "\> VipOS_MK3: INITIALIZING..."
+Delay 2
+Chat Send "\> ."
+Delay 1
+Chat Send "\> . ."
+Delay 1
+Chat Send "\> . . ."
+Delay 1
+Chat Send "\> . . . . ONLINE"
+Delay 1
+Chat Send "\> WELCOME BACK, CMMDR VIPER"
 Variable Set viperGoal "Purple Wig"
-ManualOverlayUpdates
-SendViperRecents
 UpdateViperOverlay
 
 OnCommand b 0 !powercycle !pc

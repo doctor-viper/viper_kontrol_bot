@@ -1,8 +1,11 @@
-OnCommand bms 0 !so !sh !caster !shout
-Function 'return {data: [after].trim().replace("@","")}'
+OnCommand bvms 0 !so !sh !caster !shout
+Function 'var user = [after].trim().replace("@",""); if(user.toLowerCase() == "wanker") { user = "madrush35" } if (user.toLowerCase() == "dr_viper") { user = [user]; } return { data: user, user: [user] };'
 API GET https://decapi.me/twitch/game/{data}
 Play 100 nowait dv_shout_out_alert.mp3
-Chat Send "\> SHOUTOUT ALERT!"
-Chat Send "\> {after} - https://twitch.tv/{data}"
+If 1 {data} != "madrush35" 
+  Chat Send "\> SHOUTOUT ALERT!"
+If 1 {data} = "madrush35"
+  Chat Send "\> THE WANKIEST OF WANKERS"
+Chat Send "\> @{data} - https://twitch.tv/{data}"
 If 1 {api_data} != ""
   Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"

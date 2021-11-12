@@ -17,24 +17,37 @@ OnCommand bm 0 !vipergoal
 Variable Set viperGoal {after}
 UpdateViperOverlay
 
-OnCommand bu xx_icequeen_xx 0 !doctor
+OnCommand bu xx_icequeen_xx 0 !doctor !dr !doc
 Chat Send "/me @dr_viper SOMEBODY GET ME A DOCTOR"
-Play 100 wait doctor.mp3
+Play 45 wait doctor.mp3
 
 OnSETwitchFollow
-autoBanHoss {user}
+autoBanBots {user}
 
 OnSpeak *
-autoBanHoss {user}
+autoBanBots {user}
 
-OnAction autoBanHoss
+OnAction autoBanBots
 Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
-If 3 {isHoss} = true
-  Play 100 wait yippee_ki_yay.mp3
+If 1 {in1} = 'rektroid_dread'
+  exit
+If 2 {isHoss} = true
   Chat Send "/ban {in1}"
-  SendLametricNotification "LATER, HOSS!"
+  exit
+API GET https://decapi.me/twitch/creation/{in1}?format=m/d/Y%20h:i:s%20A&tz=America/New_York
+Function 'var actDate = new Date("{api_data}").getTime(); var curDate = new Date(Date.now()).getTime(); var dayDiff = (curDate - actDate) / (1000 * 3600 * 24); return { dayDiff: parseInt(dayDiff) };'
+If 1 {dayDiff} <= 7
+  Chat Send "/ban {in1}"
 
 # OnAction isOlderThanTwoHours
 # https://decapi.me/twitch/creation/
-# API GET https://decapi.me/twitch/creation/{in1}?format=MdY&tz=America/New_York
+# OnCommand bm 0 !age 
+# Function 'var user = [after].trim().replace("@",""); return { data: user };'
+# API GET https://decapi.me/twitch/creation/{data}?format=m/d/Y%20h:i:s%20A&tz=America/New_York
+# Chat Send "\> {data}"
+# Chat Send "\> {api_data}"
+# Function 'var actDate = new Date("{api_data}").getTime(); var curDate = new Date(Date.now()).getTime(); var dayDiff = (curDate - actDate) / (1000 * 3600 * 24); return { actDate: actDate, curDate: curDate, dayDiff: parseInt(dayDiff) };'
+# Chat Send "\> {actDate}"
+# Chat Send "\> {curDate}"
+# Chat Send "\> {dayDiff}"
 # Variable Set viperSubCount {api_data}
