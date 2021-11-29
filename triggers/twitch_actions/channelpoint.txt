@@ -8,21 +8,21 @@ Chat Send "\> {user} HAS REDEEMED {reward}"
 Chat Send "\> I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
 Chat Send "\> OR START EATING THAT TRASH CAN. PUT ON THE GLASSES!"
 
-OnChannelPoint "VIPER // CAM // SHOUTOUT"
-Play 100 nowait you_crazy_mother.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
+# OnChannelPoint "VIPER // CAM // SHOUTOUT"
+# Play 100 nowait you_crazy_mother.mp3
+# Chat Send "\> {user} HAS REDEEMED {reward}"
 
-OnChannelPoint "SOUND // UGLY"
+OnChannelPoint "SFX // UGLY"
 Play 100 nowait dv_real_ugly.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 SendLametricNotification "YOU? YOU'RE OKAY. THIS ONE? REAL FUCKIN' UGLY"
 
-OnChannelPoint "SOUND // GROOVY"
+OnChannelPoint "SFX // GROOVY"
 Play 100 nowait groovy.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 SendLametricNotification "GROOVY"
 
-OnChannelPoint "SOUND // EXPOSING"
+OnChannelPoint "SFX // EXPOSING"
 Play 100 nowait exposing.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 Chat Send "\> THE COULD BE EXPOSING THEMSELVES"
@@ -30,7 +30,7 @@ Delay 1
 Chat Send "/me AND YOU DON'T WANT US, EXPOSING OURSELVES"
 SendLametricNotification "GROOVY"
 
-OnChannelPoint "SOUND // BABY COME BACK"
+OnChannelPoint "SFX // BABY COME BACK"
 Play 37 nowait baby_come_back.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 SendLametricNotification "BABY COME BACK"

@@ -54,3 +54,23 @@ Sound14
 100
 lean_mean.mp3
 ARE YOU LEAN? ARE YOU MEAN?
+Sound15
+100
+drop_it.mp3
+DROP IT!
+Sound16
+100
+what_the_heck.mp3
+WHAT THE HECK?!
+Sound17
+100
+4_a_dollar.mp3
+I'D BUY THAT FOR A DOLLAR!
+Sound18
+100
+cia_arnie.mp3
+WHAT'S THE MATTER? CIA GOT YOU PUSHING TOO MANY PENCILS?
+Sound19
+100
+my_man.mp3
+MY MAN!
