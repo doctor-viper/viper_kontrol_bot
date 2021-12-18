@@ -1,0 +1,3 @@
+OnTimer viperraffletimer 10
+Chat Send "\> NEW_RAFFLE( )"
+Chat Send "!raffle 20k"

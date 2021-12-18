@@ -1,4 +1,4 @@
-OnCommand e 30 !bs !dbsm
+OnCommand b 0 !bs !dbsm
 Play 100 nowait cmon_dont_bs_me.mp3
 Chat Send "\> C'MON"
 Delay 1

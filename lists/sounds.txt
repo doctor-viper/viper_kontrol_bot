@@ -74,3 +74,43 @@ Sound19
 100
 my_man.mp3
 MY MAN!
+Sound20
+100
+dillon_you_sob.mp3
+DILLON, YOU SON OF A BITCH
+Sound21
+100
+wrong_place_wrong_time.mp3
+YOU THE WRONG GUY, AT THE WRONG PLACE, AT THE WRONG TIME
+Sound22
+100
+sitting_duck.mp3
+HEY ASSHOLE, WHAT DO I LOOK LIKE TO YOU?
+Sound23
+100
+have_you_seen_the_light.mp3
+HAVE YOU SEEN THE LIGHT?!
+Sound24
+100
+are_you_the_police.mp3
+ARE YOU THE POLICE?
+Sound25
+100
+orange_whip.mp3
+WHO WANTS AN ORANGE WHIP?
+Sound26
+100
+i_lied.mp3
+REMEMBER SULLY, WHEN I PROMISED TO KILL YOU LAST?
+Sound27
+100
+wolverines.mp3
+WOLVERINES!
+Sound28
+100
+dead_bug.mp3
+THE ONLY GOOD BUG IS A DEAD BUG.
+Sound29
+100
+do_you_get_me.mp3
+DO YOU GET ME?

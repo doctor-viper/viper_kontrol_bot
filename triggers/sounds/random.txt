@@ -1,4 +1,7 @@
-OnCommand e 5 !vs !sound !vipersound !randomsound !sfx
+OnCommand bvm 5 !vs !sound !vipersound !randomsound !sfx
+PlayRandomSound
+
+OnAction PlayRandomSound
 GetSoundList
 List Count Sounds
 Function 'return {count: {count} / 4}'

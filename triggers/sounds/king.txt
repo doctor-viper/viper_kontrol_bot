@@ -1,0 +1,5 @@
+OnCommand bu kingxcoda 0 !king !kc !kingxcoda !kingcoda
+Play 100 nowait hailtothekingbaby.mp3
+Chat Send "\> @kingxcoda IN THE HOUSE!"
+Chat Send "\> HAIL TO THE KING, BABY"
+SendLametricNotification "KINGxCODA IN THE HOUSE!"

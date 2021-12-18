@@ -1,0 +1,9 @@
+OnInit
+API Method camAlert POST
+API Url camAlert http://localhost/viposmk3/overlay/cam/on/
+
+OnCommand b 0 !testalert
+TurnOnCamAlert
+
+OnAction TurnOnCamAlert
+API Send camAlert

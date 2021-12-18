@@ -1,38 +1,38 @@
 OnSETwitchBits
+TurnOnCamAlert
 Play 100 nowait dv_follower.mp3
 
 OnSETwitchBulkGiftSub
+TurnOnCamAlert
 Play 100 nowait dv_follower.mp3
 Chat Send "\> {user} IS AN ABSOLUTE LEGEND PogChamp"
 Chat Send "\> THEY JUST GIFTED {amount} SUBS drvipeBoombox drvipeCassette"
 UpdateViperOverlay
 
 OnSEDonation
+TurnOnCamAlert
 Play 100 nowait dv_follower.mp3
 
 OnSETwitchFollow
 Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
-If 4 {isHoss} = false
+If 5 {isHoss} = false
+  TurnOnCamAlert
   Play 60 nowait we_got_one.mp3
   Chat Send "\> THANKS FOR THE FOLLOW {user}! PogChamp"
   UpdateViperOverlay
   SendLametricNotification "WE GOT ONE! {user} JUST FOLLOWED!"
 
 OnSETwitchGiftSub
+TurnOnCamAlert
 Play 100 nowait dv_follower.mp3
 Chat Send "\> {gifter} IS AN ABSOLUTE LEGEND PogChamp"
 Chat Send "\> THEY JUST GIFTED {user} A {tier} SUB drvipeBoombox drvipeCassette"
 UpdateViperOverlay
 
-OnSETwitchHost
-Variable Load currentViperRaider
-If 2 {currentViperRaider} != {user}
-  Play 100 wait dv_follower.mp3
-  Chat Send "\> THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
-
 OnSETwitchRaid
 List Add ViperRaiders {user}
 Variable Set currentViperRaider {user}
+TurnOnCamAlert
 Play 100 wait dv_raid.mp3
 Chat Send "\> VIPER_RAID_ALERT( )"
 Delay 1
@@ -41,7 +41,15 @@ API GET https://decapi.me/twitch/game/{user}
 Chat Send "\> CRUSHIN' IT AT..."
 Chat Send "\> [ - {api_data} - ]"
 
+OnSETwitchHost
+Variable Load currentViperRaider
+If 3 {currentViperRaider} != {user}
+  TurnOnCamAlert
+  Play 100 wait dv_follower.mp3
+  Chat Send "\> THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
+
 OnSETwitchSub
+TurnOnCamAlert
 Play 100 nowait dv_follower.mp3
 If 1 {amount} = 1
   Chat Send "\> {user} JUST SUBSCRIBED PogChamp"

@@ -1,0 +1,3 @@
+OnCommand bmv 0 !bonk
+Play 100 nowait bonk.mp3
+Chat Send "\> B O N K"

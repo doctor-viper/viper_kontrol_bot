@@ -1,20 +1,25 @@
 # API endpoints / funcs
+api/alert
 api/notifications_lametric
 api/predator
 api/update_overlay
 
 # Sounds
 sounds/babycomeback.txt
+sounds/bonk.txt
 sounds/bubblegum.txt
 sounds/bullshit.txt
 sounds/cia.txt
 sounds/cookie.txt
 sounds/dontbsme.txt
+sounds/elcs.txt
 sounds/exposing.txt
+sounds/finalboss.txt
 sounds/gameover.txt
 sounds/getdown.txt
 sounds/groovy.txt
 sounds/hell.txt
+sounds/king.txt
 sounds/kween.txt
 sounds/krazy.txt
 sounds/random.txt
@@ -33,6 +38,7 @@ vipos/vipos.txt
  
 # Timers
 timers/viper_quote.txt
+# timers/viper_raffle.txt
 timers/viper_tube.txt
 timers/viper_welcome.txt
  

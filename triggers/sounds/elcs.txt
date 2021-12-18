@@ -1,0 +1,5 @@
+OnCommand bu elcomesoft 0 !elcomesoft !elcs
+Play 100 nowait dr_viper.mp3
+Chat Send "\> @elcomesoft IN THE HOUSE!"
+Chat Send "\> YOU HAVEN'T SEEN THE LASSSSST OF DR. VIPER"
+SendLametricNotification "ELCOMESOFT IN THE HOUSE!"
