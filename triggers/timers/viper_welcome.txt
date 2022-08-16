@@ -1,4 +1,2 @@
 OnTimer viperwelcometimer 3600 900
-Chat Send "\> WELCOME <3"
-Chat Send "\> SAY HI OR LURK drvipeCassette"
-Chat Send "\> APPRECIATE YOU BEING HERE drvipeBoombox PogChamp"
+Chat Send "\> say hi or lurk <3 appreciate you being here! drvipeCassette drvipeBoombox"

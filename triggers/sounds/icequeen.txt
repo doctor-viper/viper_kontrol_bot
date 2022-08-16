@@ -1,0 +1,5 @@
+OnCommand bu xx_icequeen_xx 0 !icequeen !iq
+Play 21 nowait ice_queen.mp3
+Chat Send "\> @xX_IceQueen_Xx IN THE HOUSE!"
+Chat Send "\> HERE I STAND, AND HERE I STAY - LET THE STORM RAGE ON. THE COLD NEVER BOTHERED ME ANYWAY"
+SendLametricNotification "XX_ICEQUEEN_XX IN THE HOUSE!"

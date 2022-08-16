@@ -27,7 +27,7 @@ Sound7
 calibration.mp3
 IT MUST BE A PROBLEM IN CALIBRATION
 Sound8
-100
+80
 deep_trouble.mp3
 ONE OF US IS IN DEEP TROUBLE
 Sound9
@@ -87,7 +87,7 @@ Sound22
 sitting_duck.mp3
 HEY ASSHOLE, WHAT DO I LOOK LIKE TO YOU?
 Sound23
-100
+25
 have_you_seen_the_light.mp3
 HAVE YOU SEEN THE LIGHT?!
 Sound24
@@ -95,7 +95,7 @@ Sound24
 are_you_the_police.mp3
 ARE YOU THE POLICE?
 Sound25
-100
+80
 orange_whip.mp3
 WHO WANTS AN ORANGE WHIP?
 Sound26
@@ -103,14 +103,42 @@ Sound26
 i_lied.mp3
 REMEMBER SULLY, WHEN I PROMISED TO KILL YOU LAST?
 Sound27
-100
+75
 wolverines.mp3
 WOLVERINES!
 Sound28
-100
+80
 dead_bug.mp3
 THE ONLY GOOD BUG IS A DEAD BUG.
 Sound29
 100
 do_you_get_me.mp3
 DO YOU GET ME?
+Sound30
+100
+listen_you_smell_something.mp3
+LISTEN, DO YOU SMELL SOMETHING?
+Sound31
+100
+we_came_we_saw.mp3
+WE CAME, WE SAW, WE KICKED ITS ASS!
+Sound32
+100
+twinkie.mp3
+THAT'S A BIG TWINKIE
+Sound33
+100
+i_love_this_plan.mp3
+I LOVE THIS PLAN, I'M EXCITED TO BE A PART OF IT. LET'S DO IT!
+Sound34
+100
+prehistoric_bitch.mp3
+LET'S SHOW THIS PREHISTORIC BITCH HOW WE DO THINGS DOWNTOWN.
+Sound35
+100
+do_i_feel_lucky.mp3
+WELL DO YA, PUNK?
+Sound36
+100
+dirty_harry.mp3
+GO AHEAD, MAKE MY DAY.

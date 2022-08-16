@@ -1,0 +1,28 @@
+OnInit
+API Method addAutoShoutout POST
+API Header addAutoShoutout "Content-Type" "application/json"
+API Url addAutoShoutout http://localhost/viposmk3/autoshoutout/index.php
+getAutoShoutouts
+
+OnInit
+API Method clearAutoShoutout POST
+API Url clearAutoShoutout http://localhost/viposmk3/autoshoutout/clear/
+
+OnAction updateAutoShoutout
+List Add autoShoutouts {in1}
+API RawData addAutoShoutout "{ \"twitch_user\": \"{in1}\" }"
+API Send addAutoShoutout
+
+OnAction getAutoShoutouts
+API GET 'lists\autoshoutout.txt'
+Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
+List Import autoShoutouts [lines]
+
+OnAction clearAutoShoutouts
+API Send clearAutoShoutout
+List Empty autoShoutouts
+Reset
+
+OnCommand b 0 !clear !gotime
+Chat Send "\> IT'S GO TIME"
+clearAutoShoutouts

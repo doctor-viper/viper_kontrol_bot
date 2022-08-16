@@ -13,25 +13,25 @@ Chat Send "/subscribersoff"
 Chat Send "/followersoff"
 Chat Send "\> DANGER_ZONE( FALSE )"
 
-OnCommand bm 0 !vipergoal
-Variable Set viperGoal {after}
-UpdateViperOverlay
-
-OnCommand bu xx_icequeen_xx 0 !doctor !dr !doc
+OnCommand bmu xx_icequeen_xx madrush35 0 !doctor !dr !doc
 Chat Send "/me @dr_viper SOMEBODY GET ME A DOCTOR"
 Play 45 wait doctor.mp3
 
-OnSETwitchFollow
-autoBanBots {user}
+# OnSETwitchFollow
+# autoBanBots {user}
 
-OnSpeak *
-autoBanBots {user}
+# OnSpeak *
+# autoBanBots {user}
 
 OnAction autoBanBots
 Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
 If 1 {in1} = 'rektroid_dread'
   exit
 If 1 {in1} = 'joeyscary'
+  exit
+If 1 {in1} = 'alt12j'
+  exit
+If 1 {in1} = 'anthnyxl'
   exit
 If 2 {isHoss} = true
   Chat Send "/ban {in1}"

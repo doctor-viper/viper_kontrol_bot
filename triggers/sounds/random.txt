@@ -1,4 +1,4 @@
-OnCommand bvm 5 !vs !sound !vipersound !randomsound !sfx
+OnCommand bvm 0 !vs !sound !vipersound !randomsound !sfx
 PlayRandomSound
 
 OnAction PlayRandomSound
@@ -16,10 +16,10 @@ Variable Set sound {value}
 Param Add index 1
 List Get Sounds {index}
 Variable Set quote {value}
-Play {volume} nowait {sound}
-Chat Send "\> GET_RANDOM_SOUND( )"
-Chat Send "\> {quote}"
+Chat Send "\> VoS_SFX( )"
+Chat Send "/me {quote}"
 SendLametricNotification {quote}
+Play {volume} wait {sound}
 
 OnAction GetSoundList
 API GET 'lists\sounds.txt'

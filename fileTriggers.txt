@@ -2,10 +2,14 @@
 api/alert
 api/notifications_lametric
 api/predator
+api/shoutouts
+api/subscriptions
 api/update_overlay
 
 # Sounds
 sounds/babycomeback.txt
+sounds/bloop.txt
+sounds/boop.txt
 sounds/bonk.txt
 sounds/bubblegum.txt
 sounds/bullshit.txt
@@ -14,15 +18,18 @@ sounds/cookie.txt
 sounds/dontbsme.txt
 sounds/elcs.txt
 sounds/exposing.txt
+sounds/fantasynr1.txt
 sounds/finalboss.txt
 sounds/gameover.txt
 sounds/getdown.txt
 sounds/groovy.txt
 sounds/hell.txt
+sounds/icequeen.txt
 sounds/king.txt
 sounds/kween.txt
 sounds/krazy.txt
 sounds/random.txt
+sounds/startup.txt
 sounds/two.txt
 sounds/ugly.txt
 
@@ -37,8 +44,8 @@ vips/vips.txt
 vipos/vipos.txt
  
 # Timers
+timers/viper_discord.txt
 timers/viper_quote.txt
-# timers/viper_raffle.txt
 timers/viper_tube.txt
 timers/viper_welcome.txt
  

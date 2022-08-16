@@ -1,0 +1,8 @@
+OnInit
+List Add Boops "boop1.mp3"
+List Add Boops "boop2.mp3"
+
+OnCommand bmu shinichi_8_8 0 !boop
+Chat Send "\> BOOP!"
+List Get Boops
+Play 35 nowait {value}

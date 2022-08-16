@@ -1,0 +1,2 @@
+OnTimer viperdiscordtimer 3600 1200
+Chat Send "\> Come join our Discord, the VIPERVERSE - https://discord.gg/viperverse"

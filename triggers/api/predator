@@ -6,5 +6,6 @@ OnCommand b 0 !predator
 TurnOnPredatorVision
 
 OnAction TurnOnPredatorVision
-Play 90 nowait predator_vision.mp3
 API Send predatorVision
+TurnOnCamAlert
+Play 90 wait predator_vision_v2.mp3

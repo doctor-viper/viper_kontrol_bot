@@ -1,0 +1,8 @@
+OnInit
+API Method updateSubfromSE POST
+API Header updateSubfromSE "Content-Type" "application/json"
+API Url updateSubfromSE http://localhost/viposmk3/updatesubscriber/
+
+OnAction updateLatestSub
+API RawData updateSubfromSE "{ \"subscriber\": \"{in1}\" }"
+API Send updateSubfromSE

@@ -1,6 +1,6 @@
-OnCommand e 0 !fc !friendcode
+OnCommand e 0 !fc !friendcode !switch
 Play 100 nowait kitt_scanner.mp3
-Chat Send "\> FRIEND_CODE( );"
+Chat Send "\> VIPER_SWITCH_FC( );"
 Chat Send "\> 4011-2671-4737"
 
 OnCommand e 0 !steam
@@ -19,9 +19,14 @@ Play 100 nowait kitt_scanner.mp3
 Chat Send "\> DISCORD_LINK( );"
 Chat Send "\> https://discord.gg/FUZJGkCb2G"
 
+OnCommand e 0 !limey !limes
+Play 100 nowait kitt_scanner.mp3
+Chat Send "\> https://twitch.tv/unclelimey"
+Chat Send "\> Limey's Lounge - https://discord.gg/JcbJKBAhRS"
+
 OnCommand e 0 !social !socials
 Play 100 nowait kitt_scanner.mp3
-Chat Send "\> SOCIAL_LINKS( );"
+Chat Send "\> SOCIALS( );"
 Chat Send "\> Discord - https://discord.gg/FUZJGkCb2G"
 Chat Send "\> Twitter - https://twitter.com/d0ct0r_viper"
 Chat Send "\> Instagram - https://www.instagram.com/dr_v1p3r/"
@@ -31,5 +36,16 @@ Chat Send "\> Steam - https://bit.ly/dr_viper_steam"
 OnCommand e 0 !lurk
 Play 100 nowait dv_lurk_message.mp3
 Chat Send "\> LURK_MODE( );"
-Chat Send "\> AUTO-PILOT: ENGAGED"
-Chat Send "\> [ - @{user} - ]"
+Chat Send "\> AUTO-PILOT: @{user}"
+TurnOnCamAlert
+
+OnCommand e 0 !splitgate
+Play 100 nowait kitt_scanner.mp3
+Chat Send "\> SPLITGATE( )"
+Chat Send "\> FDU8QDAC"
+
+OnCommand e 30 !onlyfans !of !onlyviper
+Play 100 nowait oh_yeah.mp3
+Chat Send "\> VIPER_ONLYFANS( );"
+Chat Send "\> bit.ly/3F49mSJ"
+TurnOnCamAlert

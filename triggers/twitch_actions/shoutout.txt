@@ -9,3 +9,4 @@ If 1 {data} = "madrush35"
 Chat Send "\> @{data} - https://twitch.tv/{data}"
 If 1 {api_data} != ""
   Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"
+TurnOnCamAlert

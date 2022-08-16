@@ -6,22 +6,29 @@ Variable Set isViperVIP {contains}
 # DID THEY JUST RAID?
 List Contains ViperRaiders "{user}"
 Variable Set isCurrentViperRaider {contains}
+# DID THEY ALREADY GET AN AUTO-SHOUTOUT?
+List Contains autoShoutouts "{lowerUsername}"
+Variable Set hasBeenShouted {contains}
 # ARE THEY A SUBSCRIBER?
 Function "var data = [data]; var subscriberStatus = data.flags.subscriber ? data.flags.subscriber : false; return { isSubscriber: subscriberStatus };"
+# ARE THEY A CHANNEL VIP?
+Function "var data = [data]; var vipStatus = data.flags.vip ? data.flags.vip : false; return { isVIP: vipStatus };"
 # ARE THEY A MOD?
 Function "var data = [data]; var modStatus = data.flags.mod ? data.flags.mod : false; return { isMod: modStatus };"
-Function "return { continue: ( ('{user}' != 'dr_viper') && ('{user}' != 'VipOS_MK3') ) && !{isCurrentViperRaider} && ( {isSubscriber} || {isViperVIP} || {isMod} ) };"
+Function "return { continue: ( ('{user}' != 'dr_viper') && ('{user}' != 'VipOS_MK3') ) && !{isCurrentViperRaider} && !{hasBeenShouted} && ( {isVIP} || {isSubscriber} || {isViperVIP} || {isMod} ) };"
 API GET https://decapi.me/twitch/game/{user}
 Play 100 nowait dv_shout_out_alert.mp3
 List Get Greetings
 Variable Set greeting {value}
+If 1 {user} = "seviaaaa"
+  Variable Set greeting "FLUFFERNUTTER"
 List Get Emotes
 Variable Set emote {value}
 If 1 {isMod} = true
-  Chat Send "\> YO SEXY MOD drvipeBoombox drvipeCassette"
-Chat Send "\> HEY {greeting} {emote}"
-Chat Send "\> PPL, CHECK OUT:"
-Chat Send "\> @{user} - https://twitch.tv/{user}"
+  Chat Send "\> drvipeBoombox MOD ALERT @{user} drvipeBoombox"
+Chat Send "\> HEY {greeting} {emote}. https://twitch.tv/{user}"
 If 1 {api_data} != ""
   Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"
+TurnOnCamAlert
+updateAutoShoutout "{lowerUsername}"
 SendLametricNotification "HEY {greeting} {user}"
