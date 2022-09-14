@@ -2,14 +2,6 @@ OnSETwitchBits
 TurnOnCamAlert
 Play 60 nowait dv_follower.mp3
 
-# OnSETwitchBulkGiftSub
-# Variable Load bulkGiftedSub
-# Variable Set bulkGiftedSub "true"
-# TurnOnCamAlert
-# Play 60 nowait dv_follower.mp3
-# Chat Send "\> {user} IS AN ABSOLUTE LEGEND PogChamp"
-# Chat Send "\> THEY JUST GIFTED {amount} SUBS drvipeBoombox drvipeCassette"
-
 OnSEDonation
 TurnOnCamAlert
 Play 60 nowait dv_follower.mp3
