@@ -1,9 +1,9 @@
-OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID" "VIPER // CIGAR" "VIPER // KAT" "VIPER // BOW" "VIPER // SKI" "VIPER // SNAKE" "VIPER // COWBOY" "VIPER // ELVIS" "VIPER // STEAM PUNK DRUNK"
+OnChannelPoint "HYDRATION SATURATION" "CIGAR" "KAT EARS" "RED BOW" "VIPER // SKI" "VIPER // SNAKE" "VIPER // COWBOY" "VIPER // ELVIS" "VIPER // STEAM PUNK DRUNK"
 Play 35 nowait Accensione.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 TurnOnCamAlert
 
-OnChannelPoint "VIPER // VISION"
+OnChannelPoint "AVIATORS"
 Play 100 nowait put_on_the_glasses.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 Chat Send "\> I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
@@ -60,13 +60,13 @@ Chat Send "\> {user} HAS REDEEMED {reward}"
 TurnOnCamAlert
 SendLametricNotification "PREDATOR VISION"
 
-OnChannelPoint "VIPER // SHOTS"
+OnChannelPoint "SHOTS"
 Play 90 nowait shot.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
 TurnOnCamAlert
 SendLametricNotification "VIPER // SHOTS"
 
-OnChannelPoint "VIPER // TUBE"
+OnChannelPoint "VIPER-TUBE"
 Play 50 nowait elaboration.mp3
 Chat Send "\> @{user} HAS REDEEMED {reward}"
 Chat Send "Choose your adventure @ https://www.doctorviper.com/vipertube/ or give us a YouTube link!"

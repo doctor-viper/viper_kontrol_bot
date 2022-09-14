@@ -20,7 +20,7 @@ API GET https://decapi.me/twitch/game/{user}
 Play 100 nowait dv_shout_out_alert.mp3
 List Get Greetings
 Variable Set greeting {value}
-If 1 {user} = "seviaaaa"
+If 1 {user} = "Seviaaaa"
   Variable Set greeting "FLUFFERNUTTER"
 List Get Emotes
 Variable Set emote {value}
