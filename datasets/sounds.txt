@@ -74,3 +74,19 @@ Sound19
 100
 my_man.mp3
 MY MAN!
+Sound20
+100
+dv_kween.mps
+MAMA DON'T LIKE TATTLETALES
+Sound21
+100
+nada_they_live.mp3
+AND I'M OUTTA BUBBLE GUM
+Sound22
+100
+put_that_cookie_down.mp3
+PUT THAT COOKIE DOWN, NOW!
+Sound23
+100
+boomstick.mp3
+THIS IS MY BOOMSTICK!

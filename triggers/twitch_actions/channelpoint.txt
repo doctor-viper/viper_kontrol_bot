@@ -13,6 +13,11 @@ OnChannelPoint "SFX // THIS ONE?"
 Play 100 nowait dv_real_ugly.mp3
 Chat Send "\> {reward} ( {user} )"
 
+OnChannelPoint "SFX // GAME OVER"
+Play 100 nowait game_over.mp3
+Chat Send "\> {reward} ( {user} )"
+SendTextAlert "G A M E - O V E R"
+
 OnChannelPoint "SFX // RANDOM"
 GetSoundList
 List Count Sounds

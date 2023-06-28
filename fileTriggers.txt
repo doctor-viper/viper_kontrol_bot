@@ -28,3 +28,6 @@ sounds/two.txt
 
 # API
 api/text-alert.txt
+
+# VipOS stuff
+vipos/vipos.txt
