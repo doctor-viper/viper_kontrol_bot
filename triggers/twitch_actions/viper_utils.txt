@@ -13,43 +13,7 @@ Chat Send "/subscribersoff"
 Chat Send "/followersoff"
 Chat Send "\> DANGER_ZONE( FALSE )"
 
-OnCommand bmu xx_icequeen_xx madrush35 0 !doctor !dr !doc
+OnCommand bmv 0 !doctor !dr !doc
 Chat Send "/me @dr_viper SOMEBODY GET ME A DOCTOR"
-Play 45 wait doctor.mp3
-
-# OnSETwitchFollow
-# autoBanBots {user}
-
-# OnSpeak *
-# autoBanBots {user}
-
-OnAction autoBanBots
-Function "var user = '{in1}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
-If 1 {in1} = 'rektroid_dread'
-  exit
-If 1 {in1} = 'joeyscary'
-  exit
-If 1 {in1} = 'alt12j'
-  exit
-If 1 {in1} = 'anthnyxl'
-  exit
-If 2 {isHoss} = true
-  Chat Send "/ban {in1}"
-  exit
-API GET https://decapi.me/twitch/creation/{in1}?format=m/d/Y%20h:i:s%20A&tz=America/New_York
-Function 'var actDate = new Date("{api_data}").getTime(); var curDate = new Date(Date.now()).getTime(); var dayDiff = (curDate - actDate) / (1000 * 3600 * 24); return { dayDiff: parseInt(dayDiff) };'
-If 1 {dayDiff} <= 4
-  Chat Send "/ban {in1}"
-
-# OnAction isOlderThanTwoHours
-# https://decapi.me/twitch/creation/
-# OnCommand bm 0 !age 
-# Function 'var user = [after].trim().replace("@",""); return { data: user };'
-# API GET https://decapi.me/twitch/creation/{data}?format=m/d/Y%20h:i:s%20A&tz=America/New_York
-# Chat Send "\> {data}"
-# Chat Send "\> {api_data}"
-# Function 'var actDate = new Date("{api_data}").getTime(); var curDate = new Date(Date.now()).getTime(); var dayDiff = (curDate - actDate) / (1000 * 3600 * 24); return { actDate: actDate, curDate: curDate, dayDiff: parseInt(dayDiff) };'
-# Chat Send "\> {actDate}"
-# Chat Send "\> {curDate}"
-# Chat Send "\> {dayDiff}"
-# Variable Set viperSubCount {api_data}
+SendTextAlert "SOMEBODY GET ME A DOCTOR!"
+Play 100 wait doctor.mp3

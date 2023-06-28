@@ -1,6 +1,0 @@
-OnCommand e 30 !al !arm !leg
-Play 60 nowait arm_and_leg.mp3
-Delay 0.5
-Chat Send "\> ARE YOU FAMILIAR WITH THE SAYING..."
-DELAY 1.5
-Chat Send "\> THAT WILL COST YOU AN ARM AND A LEG?"

@@ -1,72 +1,65 @@
-OnChannelPoint "HYDRATION SATURATION" "CIGAR" "KAT EARS" "RED BOW" "VIPER // SKI" "VIPER // SNAKE" "VIPER // COWBOY" "VIPER // ELVIS" "VIPER // STEAM PUNK DRUNK"
-Play 35 nowait Accensione.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
+OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID" "CIGAR" "CHOOSE A GAME" "VOICE CHANGER"
+Play 100 nowait Accensione.mp3
+Chat Send "\> {reward} ( {user} )"
 
 OnChannelPoint "AVIATORS"
 Play 100 nowait put_on_the_glasses.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
+Chat Send "\> {reward} ( {user} )"
 Chat Send "\> I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
 Chat Send "\> OR START EATING THAT TRASH CAN. PUT ON THE GLASSES!"
-TurnOnCamAlert
 
-# OnChannelPoint "VIPER // CAM // SHOUTOUT"
-# Play 100 nowait you_crazy_mother.mp3
-# Chat Send "\> {user} HAS REDEEMED {reward}"
 
 OnChannelPoint "SFX // THIS ONE?"
 Play 100 nowait dv_real_ugly.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
-SendLametricNotification "YOU? YOU'RE OKAY. THIS ONE? REAL FUCKIN' UGLY"
+Chat Send "\> {reward} ( {user} )"
+
+OnChannelPoint "SFX // RANDOM"
+GetSoundList
+List Count Sounds
+Function 'return {count: {count} / 4}'
+Random Number 1 {count}
+List Index Sounds "Sound{number}"
+Param Add index 1
+List Get Sounds {index}
+Variable Set volume {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set sound {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set quote {value}
+Play {volume} nowait {sound}
+Chat Send "\> GET_RANDOM_SOUND( )"
+Chat Send "/me {quote}"
+SendTextAlert {quote}
+
+OnChannelPoint "SFX // GET DOWN"
+Play 100 nowait arnold_get_down_short.wav
+Chat Send "\> {reward} ( {user} )"
+Chat Send "\> get down!"
+Delay 1
+Chat Send "\> get DOWN!"
+Delay 1
+Chat Send "\> GET DOWN!"
 
 OnChannelPoint "SFX // GROOVY"
 Play 100 nowait groovy.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
-SendLametricNotification "GROOVY"
+Chat Send "\> {reward} ( {user} )"
+SendTextAlert "G R O O V Y"
 
 OnChannelPoint "SFX // EXPOSING"
 Play 100 nowait exposing.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
+Chat Send "\> {reward} ( {user} )"
 Chat Send "\> THE COULD BE EXPOSING THEMSELVES"
 Delay 1
 Chat Send "/me AND YOU DON'T WANT US, EXPOSING OURSELVES"
-TurnOnCamAlert
-SendLametricNotification "GROOVY"
 
 OnChannelPoint "SFX // BABY COME BACK"
-Play 25 nowait baby_come_back.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
-Chat Send "\> O V E R L O A D . . ."
-Chat Send "/me BABY COME BACK"
-TurnOnCamAlert
-SendLametricNotification "BABY COME BACK"
-
-OnChannelPoint "SFX // RANDOM"
-Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
-PlayRandomSound
-
-OnChannelPoint "VIPER // AMP"
-Play 35 nowait impetuous_boy.mp3
-Chat Send "\> {user} HAS REDEEMED {reward}"
-Chat Send "/me \> IMPETUOUS BOY"
-TurnOnCamAlert
-
-OnChannelPoint "PREDATOR // VISION"
-TurnOnPredatorVision
-Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
-SendLametricNotification "PREDATOR VISION"
+Play 100 nowait baby_come_back_v2.mp3
+Chat Send "\> {reward} ( {user} )"
+Chat Send "/me drvipeBoombox b a b y - c o m e - b a c k drvipeBoombox"
+SendTextAlert "b a b y - c o m e - b a c k"
 
 OnChannelPoint "SHOTS"
-Play 90 nowait shot.mp3
+Play 100 nowait shot.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
-TurnOnCamAlert
-SendLametricNotification "VIPER // SHOTS"
-
-OnChannelPoint "VIPER-TUBE"
-Play 50 nowait elaboration.mp3
-Chat Send "\> @{user} HAS REDEEMED {reward}"
-Chat Send "Choose your adventure @ https://www.doctorviper.com/vipertube/ or give us a YouTube link!"

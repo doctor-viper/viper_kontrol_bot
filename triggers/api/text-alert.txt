@@ -1,0 +1,8 @@
+OnInit
+API Method textAlertAPI POST
+API Header textAlertAPI "Content-Type" "application/json"
+API Url textAlertAPI http://localhost:5000/api/v1/text
+
+OnAction SendTextAlert
+API RawData textAlertAPI "{ \"msg\": \"{in1}\" }"
+API Send textAlertAPI

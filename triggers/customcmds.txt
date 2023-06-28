@@ -1,25 +1,5 @@
-OnCommand e 60 !commands
-Delay 1
+OnCommand e 60 !commands !cmds
+Play 100 nowait kitt_scanner.mp3
 Chat Send "\> - - - - - - - - -"
-Chat Send "\> !discord"
-Chat Send "\> !socials"
-Chat Send "\> !lurk"
-Chat Send "\> !merch"
-Chat Send "\> !onlyfans"
 Chat Send "\> !switch"
 Chat Send "\> !steam"
-Chat Send "\> !splitgate"
-# Chat Send "\> !vq !viperquote"
-# Chat Send "\> !vt !vipertube"
-# Chat Send "\> - - - - - - - - -"
-# Chat Send "\> SOUNDS"
-# Chat Send "\> - - - - - - - - -"
-# Chat Send "\> !al !arm !leg"
-# Chat Send "\> !bs !bull !bullshit"
-# Chat Send "\> !cia"
-# Chat Send "\> !ck !cookie"
-# Chat Send "\> !bs !dontbsme"
-# Chat Send "\> !ex !exposing"
-# Chat Send "\> !gd !getdown"
-# Chat Send "\> !go !wgo !gotone" --broadcaster only
-# Chat Send "\> !tb !two !box"

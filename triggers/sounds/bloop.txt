@@ -1,4 +1,0 @@
-OnCommand bm 0 !bloop
-Chat Send "\> BLOOP BLOOP"
-Play 80 wait bloop_bloop.mp3
-

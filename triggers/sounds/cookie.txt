@@ -1,5 +1,0 @@
-OnCommand bM 30 !cookie !ck
-Play 75 nowait put_that_cookie_down.mp3
-Chat Send "\> PUT THAT COOKIE DOWN!"
-Delay 1.5
-Chat Send "\> NOW!!!"

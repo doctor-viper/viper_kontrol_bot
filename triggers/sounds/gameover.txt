@@ -1,8 +1,0 @@
-OnCommand bu lastminuteproduction 0 !gameover !lmp
-Play 100 nowait game_over.mp3
-Chat Send "\> @lastminuteproduction IN THE HOUSE!"
-SendLametricNotification "LASTMINUTEPRODUCTION IN THE HOUSE"
-Delay 1
-Chat Send "\> THAT'S IT MAN, GAME OVER MAN"
-Delay 2
-Chat Send "\> GAME OVER!"

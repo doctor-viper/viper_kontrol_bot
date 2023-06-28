@@ -1,5 +1,0 @@
-OnCommand bM 0 !gum !bubblegum
-Play 80 nowait nada_they_live.mp3
-Chat Send "\> I HAVE COME HERE TO CHEW BUBBLEGUM AND KICK ASS"
-Delay 5
-Chat Send "\> ...AND I'M ALL OUTTA BUBBLEGUM"

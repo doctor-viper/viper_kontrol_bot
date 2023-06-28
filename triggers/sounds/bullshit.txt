@@ -1,8 +1,0 @@
-OnCommand e 60 !bullshit !bull
-Play 100 nowait bullshit.mp3
-Delay 2
-Chat Send "\> bullshit"
-Delay 1
-Chat Send "\> bullSHIT"
-Delay 1
-Chat Send "\> BULLSHIT"

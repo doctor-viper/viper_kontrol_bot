@@ -1,3 +1,0 @@
-OnCommand bmu fantasynr1 0 !fantasy !fantasynr1 !wut
-Chat Send "\> WHAT - IS - HAPPENING"
-Play 150 nowait fantasy.mp3

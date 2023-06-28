@@ -1,6 +1,6 @@
-OnCommand e 0 !fc !friendcode !switch
+OnCommand e 0 !fc !friendcode !switch !nintendo
 Play 100 nowait kitt_scanner.mp3
-Chat Send "\> VIPER_SWITCH_FC( );"
+Chat Send "\> FRIEND_CODE( );"
 Chat Send "\> 4011-2671-4737"
 
 OnCommand e 0 !steam
@@ -9,49 +9,20 @@ Chat Send "\> STEAM_CODE( );"
 Chat Send "\> 1213238409"
 Chat Send "\> https://bit.ly/dr_viper_steam"
 
-OnCommand e 0 !space
-Play 100 nowait kitt_scanner.mp3
-Chat Send "\> SPACE_ENGINEERS( );"
-Chat Send "\> 66.235.169.65:29016"
-
 OnCommand e 0 !discord
 Play 100 nowait kitt_scanner.mp3
 Chat Send "\> DISCORD_LINK( );"
-Chat Send "\> https://discord.gg/viperverse
-# Chat Send "\> https://discord.gg/FUZJGkCb2G"
-
-OnCommand e 0 !limey !limes
-Play 100 nowait kitt_scanner.mp3
-Chat Send "\> https://twitch.tv/unclelimey"
-Chat Send "\> Limey's Lounge - https://discord.gg/JcbJKBAhRS"
+Chat Send "\> http://discord.viperverse.tv"
 
 OnCommand e 0 !social !socials
 Play 100 nowait kitt_scanner.mp3
-Chat Send "\> SOCIALS( );"
-Chat Send "\> Discord - https://discord.gg/viperverse"
-Chat Send "\> Twitter - https://twitter.com/viper_the_doc"
-Chat Send "\> Instagram - https://www.instagram.com/doctor.viper/"
+Chat Send "\> SOCIAL_LINKS( );"
+Chat Send "\> Discord - http://discord.viperverse.tv"
+Chat Send "\> Twitter - https://twitter.com/the_dr_viper"
+Chat Send "\> Instagram - https://www.instagram.com/doctor.viper"
 Chat Send "\> YouTube - https://bit.ly/dr_viper_youtube"
 Chat Send "\> Steam - https://bit.ly/dr_viper_steam"
 
 OnCommand e 0 !lurk
 Play 100 nowait dv_lurk_message.mp3
-Chat Send "\> LURK_MODE( );"
-Chat Send "\> AUTO-PILOT: @{user}"
-TurnOnCamAlert
-
-OnCommand e 0 !splitgate
-Play 100 nowait kitt_scanner.mp3
-Chat Send "\> SPLITGATE( )"
-Chat Send "\> FDU8QDAC"
-
-OnCommand e 0 !destiny !d2 !destiny2
-Play 100 nowait kitt_scanner.mp3
-Chat Send "\> DESTINY_2( )"
-Chat Send "\> dr_viper#8548"
-
-OnCommand e 30 !onlyfans !of !onlyviper
-Play 100 nowait oh_yeah.mp3
-Chat Send "\> VIPER_ONLYFANS( );"
-Chat Send "\> bit.ly/3F49mSJ"
-TurnOnCamAlert
+Chat Send "\> LURK( {user}  );"

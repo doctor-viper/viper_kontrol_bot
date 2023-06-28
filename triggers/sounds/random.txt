@@ -1,7 +1,4 @@
-OnCommand bvm 0 !vs !sound !vipersound !randomsound !sfx
-PlayRandomSound
-
-OnAction PlayRandomSound
+OnCommand bmv 5 !vs !sound !vipersound !randomsound !sfx
 GetSoundList
 List Count Sounds
 Function 'return {count: {count} / 4}'
@@ -16,12 +13,7 @@ Variable Set sound {value}
 Param Add index 1
 List Get Sounds {index}
 Variable Set quote {value}
-Chat Send "\> VoS_SFX( )"
+Play {volume} nowait {sound}
+Chat Send "\> GET_RANDOM_SOUND( )"
 Chat Send "/me {quote}"
-SendLametricNotification {quote}
-Play {volume} wait {sound}
-
-OnAction GetSoundList
-API GET 'lists\sounds.txt'
-Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
-List Import Sounds [lines] 
+SendTextAlert {quote}

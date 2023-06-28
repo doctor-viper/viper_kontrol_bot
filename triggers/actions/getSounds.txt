@@ -1,0 +1,4 @@
+OnAction GetSoundList
+API GET 'datasets\sounds.txt'
+Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
+List Import Sounds [lines] 

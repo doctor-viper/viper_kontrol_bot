@@ -1,9 +1,0 @@
-OnCommand e 0 !vipertube !vt
-List Get ViperVids
-Function "var vtArr = '{value}'.split(': '); return { vtname: vtArr[0], vtlink: vtArr[1] };"
-Random Number 3 27
-Chat Send "\> VIPERTV( )"
-Chat Send "\> Channel #{number}"
-Chat Send "\> {vtname}"
-Chat Send "\> {vtlink}"
-

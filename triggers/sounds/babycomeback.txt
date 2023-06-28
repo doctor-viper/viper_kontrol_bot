@@ -1,6 +1,0 @@
-OnCommand b 0 !bcb
-Play 37 nowait baby_come_back.mp3
-SendLametricNotification "BABY COME BACK"
-Delay 1
-Chat Send "\> O V E R L O A D . . ."
-Chat Send "/me BABY COME BACK"

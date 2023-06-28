@@ -10,14 +10,12 @@ class Controller {
     this.triggerAsyncMap = {};
     this.triggerAsync = [];
     this.successful = [];
-    this.cooldowns = {};
     this.initTriggers = [];
+    this.playAudio = {};
     this.addParser('controller', this);
     this.addTrigger('OnInit', 'controller');
     this.addSuccess('controller');
     this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    this.eventId = 0;
-    this.eventIdQueue = async.queue(this.setupTrigger.bind(this), 1);
   }
 
   /**
@@ -125,21 +123,9 @@ class Controller {
    * @param {string} triggerId id of the trigger to run
    */
   async handleData(triggerId, triggerParams) {
-    this.eventIdQueue.push({
-      triggerId: triggerId,
-      triggerParams: triggerParams
-    });
-  }
-
-  async setupTrigger(data, callback) {
-    var { triggerId, triggerParams } = data;
     triggerParams = triggerParams || {};
-    triggerParams['_kc_event_id_'] = this.eventId;
-    if (this.eventId === 1000000000) {
-      this.eventId = 0;
-    } else {
-      this.eventId = this.eventId + 1;
-    }
+    triggerParams['_kc_event_id_'] = uuidv4();
+
     if (typeof(this.triggerAsyncMap[triggerId]) !== "undefined") {
       var queue = this.triggerAsync[this.triggerAsyncMap[triggerId]];
       queue.push({
@@ -237,7 +223,9 @@ class Controller {
 
             if (runParams.actions) {
               runParams.actions.forEach((item, i) => {
-                runParams.actions[i] = Parser.splitLine(item);
+                if (typeof item === 'string' || item instanceof String) {
+                  runParams.actions[i] = Parser.splitLine(item);
+                }
               });
 
               triggerSequence.splice(i+1, 0, ...runParams.actions);
@@ -263,6 +251,7 @@ class Controller {
       }
     } catch (error) {
       console.error(error);
+      console.error(error.stack);
     }
   }
 
@@ -294,58 +283,62 @@ class Controller {
       location.reload(true);
     }
     else if (parserName === 'play') {
-      var { volume, wait, sound } = Parser.getInputs(data, ['volume', 'wait', 'sound']);
-      // Play audio and await the end of the audio
-      var audio = new Audio(`sounds/${sound.trim()}`);
-      var source = this.audioContext.createMediaElementSource(audio);
-      var gainNode = this.audioContext.createGain();
-      source.connect(gainNode);
-      gainNode.connect(this.audioContext.destination);
-      volume = parseInt(volume);
-      if (!isNaN(volume)) {
-        audio.volume = 1;
-        gainNode.gain.value = volume / 100;
-      }
-      if (wait.toLowerCase() === 'wait') {
-        await new Promise((resolve) => {
-          audio.onended = () => {
-            gainNode.disconnect();
-            source = null;
-            gainNode = null;
-            resolve();
+      if (data[1].toLowerCase() === "stop") {
+        Object.keys(this.playAudio).forEach(key => {
+
+          this.playAudio[key][0].pause();
+          if (this.playAudio[key].length > 1) {
+            this.playAudio[key][1]();
           }
-          var playPromise = audio.play();
-          if (playPromise !== undefined) {
-            playPromise.then(function() {
-              // Automatic playback started!
-            }).catch(function(error) {
-              console.error(`[${error.code}] ${error.name}: ${error.message}`);
+          delete this.playAudio[key];
+        });
+      }
+      else {
+        var { volume, wait, sound } = Parser.getInputs(data, ['volume', 'wait', 'sound']);
+        // Play audio and await the end of the audio
+        var audio = new Audio(`sounds/${sound.trim()}`);
+        var source = this.audioContext.createMediaElementSource(audio);
+        var gainNode = this.audioContext.createGain();
+        source.connect(gainNode);
+        gainNode.connect(this.audioContext.destination);
+        volume = parseInt(volume);
+        if (!isNaN(volume)) {
+          audio.volume = 1;
+          gainNode.gain.value = volume / 100;
+        }
+
+        this.playAudio[parameters['_kc_event_id_']] = [audio];
+        if (wait.toLowerCase() === 'wait') {
+          await new Promise((resolve) => {
+            this.playAudio[parameters['_kc_event_id_']].push(resolve);
+            audio.onended = () => {
               gainNode.disconnect();
               source = null;
               gainNode = null;
               resolve();
-            });
+            }
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+              playPromise.then(function() {
+                // Automatic playback started!
+              }).catch(function(error) {
+                console.error(`[${error.code}] ${error.name}: ${error.message}`);
+                gainNode.disconnect();
+                source = null;
+                gainNode = null;
+                resolve();
+              });
+            }
+          });
+        } else {
+          audio.play();
+          audio.onended = () => {
+            gainNode.disconnect();
+            source = null;
+            gainNode = null;
           }
-        });
-      } else {
-        audio.play();
-        audio.onended = () => {
-          gainNode.disconnect();
-          source = null;
-          gainNode = null;
         }
       }
-    }
-    else if (parserName === 'cooldown') {
-      var { action, name, duration } = Parser.getInputs(data, ['action', 'name', 'duration'], false, 1);
-      var res = {};
-      if (action.toLowerCase() === 'check') {
-        var res = await this.checkCooldown(name);
-      } else {
-        var res = await this.handleCooldown(name, parseFloat(duration));
-      }
-
-      return res;
     }
     else if (parserName === 'if') {
       var res = await this.handleIf(data);
@@ -358,15 +351,25 @@ class Controller {
     }
     else if (parserName === 'function') {
       var func = data.slice(1).join(' ');
-      var fn = new Function(func);
-      var res = fn();
-      return res;
+      try {
+        var fn = new Function(func);
+        var res = fn();
+        return res;
+      } catch (error) {
+        console.error(`Unable to run custom Function: ${func}`);
+        throw error;
+      }
     }
     else if (parserName === 'asyncfunction') {
       var func = data.slice(1).join(' ');
-      var fn = new AsyncFunction(func);
-      var res = await fn();
-      return res;
+      try {
+        var fn = new AsyncFunction(func);
+        var res = await fn();
+        return res;
+      } catch (error) {
+        console.error(`Unable to run custom AsyncFunction: ${func}`);
+        throw error;
+      }
     }
     else if (parserName === 'error') {
       var message = data.slice(1).join(' ');
@@ -376,50 +379,20 @@ class Controller {
       var message = data.slice(1).join(' ');
       console.log(message);
     }
+    else if (parserName === 'globals') {
+      var { name } = Parser.getInputs(data, ['name']);
+      var keys = await IDBService.keys();
+      var parser = this.getParser("list");
+      parser.createList(name, keys);
+    }
     else {
       // Get parser and run trigger content
       var parser = this.getParser(parserName);
-      if (!parser) parser = this.getParser('Actions');
+      if (!parser) parser = this.getParser('Action');
       if (parser) {
         return await parser.handleData(data, parameters);
       }
     }
-  }
-
-  /**
-   * Check the named cooldown.
-   *
-   * @param {string} name name of the cooldown
-   * @return {Object} whether or not to continue the trigger.
-   */
-  checkCooldown(name) {
-    var response = {};
-    response[name] = false;
-    var curTime = new Date().getTime();
-    if ( typeof(this.cooldowns[name]) !== 'undefined' && curTime < this.cooldowns[name] ) {
-      response[name] = true;
-      response['cooldown_real'] = (this.cooldowns[name] - curTime) / 1000;
-      response['cooldown'] = Math.ceil(response['cooldown_real']);
-    }
-    return response;
-  }
-
-  /**
-   * Handle the named cooldown.
-   *
-   * @param {string} name name of the cooldown
-   * @param {numeric} duration duration of the cooldown
-   * @return {Object} whether or not to continue the trigger.
-   */
-  handleCooldown(name, duration) {
-    var response = {"continue": false};
-    duration = duration * 1000; // convert to milliseconds
-    var curTime = new Date().getTime();
-    if ( typeof(this.cooldowns[name]) === 'undefined' || curTime >= this.cooldowns[name] ) {
-      this.cooldowns[name] = curTime + duration;
-      response["continue"] = true;
-    }
-    return response;
   }
 
   /**

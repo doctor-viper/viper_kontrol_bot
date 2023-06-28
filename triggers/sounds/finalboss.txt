@@ -1,5 +1,0 @@
-OnCommand bu final57boss 0 !finalboss !fb !final57boss
-Play 100 nowait chris_tucker_words.mp3
-Chat Send "\> @Final57Boss IN THE HOUSE!"
-Chat Send "\> DO YOU UNDERSTAND THE WORDS THAT ARE COMING OUTTA MY MOUTH?!"
-SendLametricNotification "FINAL57BOSS IN THE HOUSE!"

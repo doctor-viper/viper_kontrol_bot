@@ -24,6 +24,7 @@
     slobsSocket.sendSLOBS("sceneSwitched", "ScenesService");
     slobsSocket.sendSLOBS("sceneAdded", "ScenesService");
     slobsSocket.sendSLOBS("sceneRemoved", "ScenesService");
+    slobsSocket.sendSLOBS("streamingStatusChange", "StreamingService");
   };
 
   socket.onmessage = (e) => {
@@ -147,6 +148,22 @@
         }
       });
     }
+  }
+
+  slobsSocket.setVolume = async function(source, volume) {
+    return await new Promise((resolve) => {
+      var id = slobsSocket.sendSLOBS("getSources", "AudioService");
+      slobsSocket.responses[id] = [slobsSocket._setVolume, [resolve, source, volume]];
+    });
+  }
+
+  slobsSocket._setVolume = async function(data, resolve, source, volume) {
+    data.result.forEach((sourceByName, i) => {
+      if (sourceByName.name === source) {
+        resolve(sourceByName.fader.deflection);
+        slobsSocket.sendSLOBS("setDeflection", sourceByName.resourceId, [volume]);
+      }
+    });
   }
 
   slobsSocket.rotateSource = function(scene, source, degree) {

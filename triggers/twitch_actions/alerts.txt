@@ -1,33 +1,23 @@
 OnSETwitchBits
-TurnOnCamAlert
-Play 60 nowait dv_follower.mp3
+Play 100 nowait dv_follower.mp3
+
+OnSETwitchBulkGiftSub
+Play 100 nowait dv_follower.mp3
+Chat Send "\> {user} just gifted {amount} subs! LEGEND! drvipeBoombox drvipeCassette"
 
 OnSEDonation
-TurnOnCamAlert
-Play 60 nowait dv_follower.mp3
+Play 100 nowait dv_follower.mp3
 
 OnSETwitchFollow
-Function "var user = '{user}'; var regexName = /^hoss.*$/igm; var regexNum = /0312/ig; var regexGunName = /^gun.*$/igm; return { isHoss: (regexName.test(user) || regexGunName.test(user) || regexNum.test(user)) };"
-If 6 {isHoss} = false
-  TurnOnCamAlert
-  Play 60 nowait we_got_one.mp3
-  Chat Send "\> Thanks for the follow {user}! PogChamp"
-  UpdateViperOverlay
-  Delay 1
-  SendLametricNotification "WE GOT ONE! {user} JUST FOLLOWED!"
+Play 100 nowait we_got_one.mp3
+Chat Send "\> Thanks for the follow {user}! PogChamp"
 
 OnSETwitchGiftSub
-TurnOnCamAlert
-Play 60 wait dv_follower.mp3
-Chat Send "\> {gifter} is an absolute legend! PogChamp"
-Chat Send "\> ^^ just gifted {user} A {tier} sub drvipeBoombox drvipeCassette"
-UpdateViperOverlay
+Play 100 nowait dv_follower.mp3
+Chat Send "\> {user} just gifted {amount} subs! LEGEND! drvipeBoombox drvipeCassette"
 
 OnSETwitchRaid
-List Add ViperRaiders {user}
-Variable Set currentViperRaider {user}
-TurnOnCamAlert
-Play 100 nowait dv_raid.mp3
+Play 100 wait dv_raid.mp3
 Chat Send "\> VIPER_RAID_ALERT( )"
 Delay 1
 Chat Send "\> https://twitch.tv/{user}"
@@ -35,19 +25,9 @@ API GET https://decapi.me/twitch/game/{user}
 Chat Send "\> CRUSHIN' IT AT..."
 Chat Send "\> [ - {api_data} - ]"
 
-OnSETwitchHost
-Variable Load currentViperRaider
-If 3 {currentViperRaider} != {user}
-  TurnOnCamAlert
-  Play 60 nowait dv_follower.mp3
-  Chat Send "\> THANKS FOR THE HOST {user}! drvipeBoombox PogChamp drvipeCassette"
-
 OnSETwitchSub
-TurnOnCamAlert
+Play 100 nowait dv_follower.mp3
 If 1 {amount} = 1
-  Chat Send "\> {user} JUST SUBSCRIBED PogChamp"
+  Chat Send "\> {user} just subscribed drvipeCassette"
 If 1 {amount} > 1
-  Chat Send "\> {user} SUBSCRIBED FOR {amount} MONTHS IN A ROW! PogChamp"
-Play 100 wait dv_shout_out_alert.mp3
-updateLatestSub {user}
-UpdateViperOverlay
+  Chat Send "\> {user} subscribed for {amount} months! drvipeBoombox PogChamp"

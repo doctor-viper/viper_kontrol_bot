@@ -1,10 +1,8 @@
 OnInit
-List Empty ViperRaiders
-Chat Send "\> RE-INITIALIZING ..."
+Chat Send "\> VipOS_MK3: INITIALIZING ..."
 Delay 0.5
-List Get Startup
-Play 35 nowait {value}
-UpdateViperOverlay
+Play 50 nowait welcome_back.mp3
+Chat Send "\> WELCOME BACK, CMMDR"
 
 OnCommand b 0 !powercycle !pc
 Reset
