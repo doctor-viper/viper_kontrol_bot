@@ -1,3 +1,9 @@
+OnEveryChatMessage
+# IS IT A HIGHLIGHTED MESSAGE?
+Function "var data = [data]; var isHighlighted = data.flags.highlighted ? data.flags.highlighted : false; return { highlighted: isHighlighted };"
+Function "return { continue: ( {highlighted} ) };"
+Play 100 nowait kitt_scanner.mp3
+
 OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID" "CIGAR" "CHOOSE A GAME" "VOICE CHANGER"
 Play 100 nowait Accensione.mp3
 Chat Send "\> {reward} ( {user} )"
