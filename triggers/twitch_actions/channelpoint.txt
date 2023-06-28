@@ -52,6 +52,11 @@ Play 100 nowait groovy.mp3
 Chat Send "\> {reward} ( {user} )"
 SendTextAlert "G R O O V Y"
 
+OnChannelPoint "SFX // BS"
+Play 100 nowait bullshit.mp3
+Chat Send "\> {reward} ( {user} )"
+SendTextAlert "B U L L S H I T"
+
 OnChannelPoint "SFX // EXPOSING"
 Play 100 nowait exposing.mp3
 Chat Send "\> {reward} ( {user} )"
