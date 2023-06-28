@@ -76,7 +76,7 @@ my_man.mp3
 MY MAN!
 Sound20
 100
-dv_kween.mps
+dv_kween.mp3
 MAMA DON'T LIKE TATTLETALES
 Sound21
 100
