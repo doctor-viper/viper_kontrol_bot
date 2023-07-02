@@ -15,6 +15,6 @@ Chat Send "\> DANGER_ZONE( FALSE )"
 
 OnCommand bmv 0 !doctor !dr !doc
 Chat Send "/me @dr_viper SOMEBODY GET ME A DOCTOR"
-SendTextAlert "SOMEBODY GET ME A DOCTOR!"
+Play 100 nowait doctor.mp3
 SendCamAlert
-Play 100 wait doctor.mp3
+SendTextAlert "SOMEBODY GET ME A DOCTOR!"

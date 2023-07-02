@@ -30,8 +30,8 @@ SendCamAlert
 OnChannelPoint "SFX // GAME OVER"
 Play 100 nowait game_over.mp3
 Chat Send "\> {reward} ( {user} )"
-SendTextAlert "That's it man, it game over man<br />G A M E - O V E R"
 SendCamAlert
+SendTextAlert "That's it man, it game over man. G A M E - O V E R"
 
 OnChannelPoint "SFX // RANDOM"
 GetRandomSound

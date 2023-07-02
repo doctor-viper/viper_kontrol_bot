@@ -30,7 +30,7 @@ Variable Set quote {value}
 Play {volume} nowait {sound}
 Chat Send "\> VIPOS_REPLY( )"
 Chat Send "/me {quote}"
-SendTextAlert {quote}
+SendCamAlert
   
 OnAction VipOSChat
 API GET 'datasets\vipos_chat.txt'
@@ -52,4 +52,4 @@ Variable Set quote {value}
 Play {volume} nowait {sound}
 Chat Send "\> VIPOS_REPLY( )"
 Chat Send "/me {quote}"
-SendTextAlert {quote}
+SendCamAlert
