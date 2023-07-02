@@ -18,7 +18,7 @@ Param Add index 1
 List Get Sounds {index}
 Variable Set quote {value}
 Play {volume} nowait {sound}
-Chat Send "\> GET_RANDOM_SOUND( )"
-Chat Send "/me {quote}"
-SendTextAlert {quote}
+Chat Send "\> RANDOM_SFX( {user} )"
+# Chat Send "/me {quote}"
 SendCamAlert
+SendTextAlert {quote}

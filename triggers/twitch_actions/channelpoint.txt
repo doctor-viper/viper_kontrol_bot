@@ -49,29 +49,30 @@ SendCamAlert
 OnChannelPoint "SFX // GROOVY"
 Play 100 nowait groovy.mp3
 Chat Send "\> {reward} ( {user} )"
-SendTextAlert "G R O O V Y"
 SendCamAlert
+SendTextAlert "G R O O V Y"
 
 OnChannelPoint "SFX // BS"
-Play 75 nowait bullshit.mp3
+Play 65 nowait bullshit.mp3
 Chat Send "\> {reward} ( {user} )"
-SendTextAlert "B U L L S H I T"
 SendCamAlert
+SendTextAlert "B U L L S H I T"
 
 OnChannelPoint "SFX // EXPOSING"
 Play 100 nowait exposing.mp3
 Chat Send "\> {reward} ( {user} )"
 Chat Send "\> THE COULD BE EXPOSING THEMSELVES"
 Delay 1
-Chat Send "/me AND YOU DON'T WANT US, EXPOSING OURSELVES"
+# Chat Send "/me AND YOU DON'T WANT US, EXPOSING OURSELVES"
 SendCamAlert
+SendTextAlert "AND YOU DON'T WANT US, EXPOSING OURSELVES"
 
 OnChannelPoint "SFX // BABY COME BACK"
 Play 75 nowait baby_come_back_v2.mp3
 Chat Send "\> {reward} ( {user} )"
 Chat Send "/me drvipeBoombox b a b y - c o m e - b a c k drvipeBoombox"
-SendTextAlert "b a b y - c o m e - b a c k"
 SendCamAlert
+SendTextAlert "b a b y - c o m e - b a c k"
 
 OnChannelPoint "SHOTS"
 Play 100 nowait shot.mp3

@@ -1,2 +1,2 @@
 OnTimer viperwelcometimer 3600 900
-Chat Send "\> drvipeCassette drvipeBoombox say hi or lurk - appreciate you hanging out! drvipeBoombox drvipeCassette"
+Chat Send "\> drvipeCassette drvipeBoombox appreciate you hanging out! drvipeBoombox drvipeCassette"

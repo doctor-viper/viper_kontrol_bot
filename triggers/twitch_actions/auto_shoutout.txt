@@ -19,5 +19,5 @@ Chat Send "\> PPL, CHECK OUT:"
 Chat Send "\> @{user} - https://twitch.tv/{user}"
 If 1 {api_data} != ""
   Chat Send "\> CRUSHIN' IT AT... [ - {api_data} - ]"
-SendTextAlert "Yo {user}! HEY {greeting}"
 SendCamAlert
+SendTextAlert "Yo {user}! HEY {greeting}"

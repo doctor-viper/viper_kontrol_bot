@@ -47,7 +47,7 @@ Sound12
 do_it_do_it_now.mp3
 DO IT! DO IT NOW! C'MOOOONNNNNN!
 Sound13
-100
+75
 badasses.mp3
 AAAAAAABSOLUTELY BADASSES, LET'S PACK 'EM IN - GET IN THERE!
 Sound14
