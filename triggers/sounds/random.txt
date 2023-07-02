@@ -1,19 +1,2 @@
 OnCommand bmv 5 !vs !sound !vipersound !randomsound !sfx
-GetSoundList
-List Count Sounds
-Function 'return {count: {count} / 4}'
-Random Number 1 {count}
-List Index Sounds "Sound{number}"
-Param Add index 1
-List Get Sounds {index}
-Variable Set volume {value}
-Param Add index 1
-List Get Sounds {index}
-Variable Set sound {value}
-Param Add index 1
-List Get Sounds {index}
-Variable Set quote {value}
-Play {volume} nowait {sound}
-Chat Send "\> GET_RANDOM_SOUND( )"
-Chat Send "/me {quote}"
-SendTextAlert {quote}
+GetRandomSound

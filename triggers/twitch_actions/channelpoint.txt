@@ -3,49 +3,38 @@ OnEveryChatMessage
 Function "var data = [data]; var isHighlighted = data.flags.highlighted ? data.flags.highlighted : false; return { highlighted: isHighlighted };"
 Function "return { continue: ( {highlighted} ) };"
 Play 100 nowait kitt_scanner.mp3
+SendCamAlert
 
 OnChannelPoint "HYDRATION SATURATION" "HAT // REVERSAL" "VIPER // CAM" "GUIDE // RAID" "CIGAR" "CHOOSE A GAME" "VOICE CHANGER"
 Play 100 nowait Accensione.mp3
 Chat Send "\> {reward} ( {user} )"
+SendCamAlert
 
 OnChannelPoint "AVIATORS"
 Play 100 nowait put_on_the_glasses.mp3
 Chat Send "\> {reward} ( {user} )"
 Chat Send "\> I'M GIVING YOU A CHOICE, EITHER PUT ON THESE GLASSES"
 Chat Send "\> OR START EATING THAT TRASH CAN. PUT ON THE GLASSES!"
+SendCamAlert
 
 OnChannelPoint "E.V.S. Test"
 OBS Scene "VIPERCAST"
 Play 100 nowait kitt_scanner.mp3
+SendCamAlert
 
 OnChannelPoint "SFX // THIS ONE?"
 Play 100 nowait dv_real_ugly.mp3
 Chat Send "\> {reward} ( {user} )"
+SendCamAlert
 
 OnChannelPoint "SFX // GAME OVER"
 Play 100 nowait game_over.mp3
 Chat Send "\> {reward} ( {user} )"
-SendTextAlert "G A M E - O V E R"
+SendTextAlert "That's it man, it game over man<br />G A M E - O V E R"
+SendCamAlert
 
 OnChannelPoint "SFX // RANDOM"
-GetSoundList
-List Count Sounds
-Function 'return {count: {count} / 4}'
-Random Number 1 {count}
-List Index Sounds "Sound{number}"
-Param Add index 1
-List Get Sounds {index}
-Variable Set volume {value}
-Param Add index 1
-List Get Sounds {index}
-Variable Set sound {value}
-Param Add index 1
-List Get Sounds {index}
-Variable Set quote {value}
-Play {volume} nowait {sound}
-Chat Send "\> GET_RANDOM_SOUND( )"
-Chat Send "/me {quote}"
-SendTextAlert {quote}
+GetRandomSound
 
 OnChannelPoint "SFX // GET DOWN"
 Play 100 nowait arnold_get_down_short.wav
@@ -55,16 +44,19 @@ Delay 1
 Chat Send "\> get DOWN!"
 Delay 1
 Chat Send "\> GET DOWN!"
+SendCamAlert
 
 OnChannelPoint "SFX // GROOVY"
 Play 100 nowait groovy.mp3
 Chat Send "\> {reward} ( {user} )"
 SendTextAlert "G R O O V Y"
+SendCamAlert
 
 OnChannelPoint "SFX // BS"
 Play 75 nowait bullshit.mp3
 Chat Send "\> {reward} ( {user} )"
 SendTextAlert "B U L L S H I T"
+SendCamAlert
 
 OnChannelPoint "SFX // EXPOSING"
 Play 100 nowait exposing.mp3
@@ -72,13 +64,16 @@ Chat Send "\> {reward} ( {user} )"
 Chat Send "\> THE COULD BE EXPOSING THEMSELVES"
 Delay 1
 Chat Send "/me AND YOU DON'T WANT US, EXPOSING OURSELVES"
+SendCamAlert
 
 OnChannelPoint "SFX // BABY COME BACK"
 Play 75 nowait baby_come_back_v2.mp3
 Chat Send "\> {reward} ( {user} )"
 Chat Send "/me drvipeBoombox b a b y - c o m e - b a c k drvipeBoombox"
 SendTextAlert "b a b y - c o m e - b a c k"
+SendCamAlert
 
 OnChannelPoint "SHOTS"
 Play 100 nowait shot.mp3
 Chat Send "\> {user} HAS REDEEMED {reward}"
+SendCamAlert

@@ -27,6 +27,7 @@ sounds/random.txt
 sounds/two.txt
 
 # API
+api/bg-alert.txt
 api/text-alert.txt
 
 # VipOS stuff

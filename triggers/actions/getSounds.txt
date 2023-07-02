@@ -2,3 +2,23 @@ OnAction GetSoundList
 API GET 'datasets\sounds.txt'
 Function "let lines = [api_data].trim().split(/\r\n|\n/);return {lines: lines}"
 List Import Sounds [lines] 
+
+OnAction GetRandomSound
+List Count Sounds
+Function 'return {count: {count} / 4}'
+Random Number 1 {count}
+List Index Sounds "Sound{number}"
+Param Add index 1
+List Get Sounds {index}
+Variable Set volume {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set sound {value}
+Param Add index 1
+List Get Sounds {index}
+Variable Set quote {value}
+Play {volume} nowait {sound}
+Chat Send "\> GET_RANDOM_SOUND( )"
+Chat Send "/me {quote}"
+SendTextAlert {quote}
+SendCamAlert
