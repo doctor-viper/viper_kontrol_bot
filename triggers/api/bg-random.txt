@@ -1,0 +1,6 @@
+OnInit
+API Method bgRandomAPI POST
+API Url bgRandomAPI http://localhost:5000/api/v1/bg-random
+
+OnAction SendCamRandomChange
+API Send bgRandomAPI

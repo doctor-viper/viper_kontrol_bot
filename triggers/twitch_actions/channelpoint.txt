@@ -27,6 +27,10 @@ Play 100 nowait dv_real_ugly.mp3
 Chat Send "\> {reward} ( {user} )"
 SendCamAlert
 
+OnChannelPoint "BG COLOR CHANGE"
+Play 100 nowait kitt_scanner.mp3
+SendCamRandomChange
+
 OnChannelPoint "SFX // GAME OVER"
 Play 100 nowait game_over.mp3
 Chat Send "\> {reward} ( {user} )"
