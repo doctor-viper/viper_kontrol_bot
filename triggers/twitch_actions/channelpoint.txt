@@ -40,6 +40,11 @@ SendTextAlert "That's it man, it game over man. G A M E - O V E R"
 OnChannelPoint "SFX // RANDOM"
 GetRandomSound
 
+OnChannelPoint "SFX // NEVER GONNA QUIT"
+Play 100 nowait never_gonna_quit.mp3
+SendCamAlert
+SendTextAlert "NEVER EVER GONNA QUIT, CAUSE QUITTIN JUST AINT MY SCHTICK"
+
 OnChannelPoint "SFX // GET DOWN"
 Play 100 nowait arnold_get_down_short.wav
 Chat Send "\> {reward} ( {user} )"
