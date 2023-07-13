@@ -1,0 +1,6 @@
+OnInit
+API Method terminatorAPI POST
+API Url terminatorAPI http://localhost:5000/api/v1/terminator
+
+OnAction SendTerminator
+API Send terminatorAPI

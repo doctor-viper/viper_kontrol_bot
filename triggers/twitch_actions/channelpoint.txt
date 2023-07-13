@@ -55,6 +55,12 @@ Delay 1
 Chat Send "\> GET DOWN!"
 SendCamAlert
 
+OnChannelPoint "TERMINATOR VISION"
+Play 100 nowait terminator_overlay.mp3
+Chat Send "\> {reward} ( {user} )"
+SendTerminator
+SendCamAlert
+
 OnChannelPoint "SFX // GROOVY"
 Play 100 nowait groovy.mp3
 Chat Send "\> {reward} ( {user} )"

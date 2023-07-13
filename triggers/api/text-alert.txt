@@ -8,6 +8,6 @@ API RawData textAlertAPI "{ \"msg\": \"{in1}\" }"
 OBS SceneSource "MAIN w/ CAM" "CAM FRONT" off
 OBS SceneSource "MAIN w/ CAM" "CAM FRAME" off
 API Send textAlertAPI
-Delay 3
+Delay 3.5
 OBS SceneSource "MAIN w/ CAM" "CAM FRONT" on
 OBS SceneSource "MAIN w/ CAM" "CAM FRAME" on
