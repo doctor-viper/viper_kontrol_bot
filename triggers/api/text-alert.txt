@@ -11,3 +11,7 @@ API Send textAlertAPI
 Delay 3.5
 OBS SceneSource "MAIN w/ CAM" "CAM FRONT" on
 OBS SceneSource "MAIN w/ CAM" "CAM FRAME" on
+
+OnAction SendTextAlertNoDelay
+API RawData textAlertAPI "{ \"msg\": \"{in1}\" }"
+API Send textAlertAPI

@@ -4,8 +4,9 @@ SendCamAlert
 
 OnSETwitchBulkGiftSub
 Play 100 nowait dv_follower.mp3
-Chat Send "\> {user} just gifted {amount} subs! LEGEND! drvipeBoombox drvipeCassette"
 SendCamAlert
+# Chat Send "\> {user} just gifted {amount} subs! LEGEND! drvipeBoombox drvipeCassette"
+
 
 OnSEDonation
 Play 100 nowait dv_follower.mp3
